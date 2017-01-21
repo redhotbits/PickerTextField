@@ -20,7 +20,6 @@
 	if (self = [super init]) {
 		self.picker = [UIPickerView new];
 		self.picker.delegate = self;
-		self.picker.dataSource = self;
 		self.data = pickerData;
 		self.compBlock = completion;
         _dataSource = [[PickerTextFieldDataSource alloc] initDataSourceWithPickerView:self.picker data:self.data];
