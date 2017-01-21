@@ -1,0 +1,23 @@
+//
+//  ViewController.m
+//  PickerTextField
+//
+//  Created by Mirko Tomic on 1/21/17.
+//  Copyright © 2017 Red Hot Bits. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.picker.data = @[@[@"test",@"test2",@"test3",@"test4",@"test5",@"test6",@"test7",@"test8",@"test9"]];
+}
+
+@end
