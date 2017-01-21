@@ -7,11 +7,11 @@
 //
 
 #import "GenericPicker.h"
-#import "PickerTextFieldDataSource.h"
+#import "DataSourceManager.h"
 
 @interface GenericPicker ()
 @property (copy,nonatomic) completionHandler compBlock;
-@property (nonatomic) PickerTextFieldDataSource *dataSource;
+@property (nonatomic) DataSourceManager *dataSource;
 @end
 
 @implementation GenericPicker
@@ -22,9 +22,14 @@
 		self.picker.delegate = self;
 		self.data = pickerData;
 		self.compBlock = completion;
-        _dataSource = [[PickerTextFieldDataSource alloc] initDataSourceWithPickerView:self.picker data:self.data];
+        [[DataSourceManager sharedInstance] registerPicker:self.picker dataGetterBlock:^{return pickerData;}];
 	}
 	return self;
+}
+
+-(void)dealloc {
+
+    [[DataSourceManager sharedInstance] unregisterPicker:self.picker];
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
