@@ -10,7 +10,7 @@
 
 typedef void(^completionHandler) (NSString *selectedString, int selectedRow);
 
-@interface GenericPicker : NSObject <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface GenericPicker : NSObject <UIPickerViewDelegate>
 
 @property (strong,nonatomic) UIPickerView *picker;
 @property (strong,nonatomic) NSArray<NSArray*>* data;

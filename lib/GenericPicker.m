@@ -7,9 +7,11 @@
 //
 
 #import "GenericPicker.h"
+#import "PickerTextFieldDataSource.h"
 
 @interface GenericPicker ()
 @property (copy,nonatomic) completionHandler compBlock;
+@property (nonatomic) PickerTextFieldDataSource *dataSource;
 @end
 
 @implementation GenericPicker
@@ -21,20 +23,9 @@
 		self.picker.dataSource = self;
 		self.data = pickerData;
 		self.compBlock = completion;
+        _dataSource = [[PickerTextFieldDataSource alloc] initDataSourceWithPickerView:self.picker data:self.data];
 	}
 	return self;
-}
-
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-	return self.data.count;
-}
-
--(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-	return self.data[component].count;
-}
-
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-	return self.data[component][row];
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
@@ -42,6 +33,7 @@
 }
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+    
 	UILabel *retval = (id)view;
 	if (!retval) {
 		retval= [[UILabel alloc] initWithFrame:CGRectMake(8.0f, 0.0f, [pickerView rowSizeForComponent:component].width - 16.0f, [pickerView rowSizeForComponent:component].height)];

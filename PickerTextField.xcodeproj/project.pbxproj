@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A82FE3BE1E338D3000012513 /* PickerTextFieldDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A82FE3BD1E338D3000012513 /* PickerTextFieldDataSource.m */; };
 		AC7A2A921E33261800FE3E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A911E33261800FE3E73 /* main.m */; };
 		AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A941E33261800FE3E73 /* AppDelegate.m */; };
 		AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A971E33261800FE3E73 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A82FE3BC1E338D3000012513 /* PickerTextFieldDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldDataSource.h; sourceTree = "<group>"; };
+		A82FE3BD1E338D3000012513 /* PickerTextFieldDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextFieldDataSource.m; sourceTree = "<group>"; };
 		AC7A2A8D1E33261800FE3E73 /* PickerTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7A2A911E33261800FE3E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC7A2A931E33261800FE3E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 				AC7A2AA91E33264A00FE3E73 /* GenericPicker.m */,
 				AC7A2AAA1E33264A00FE3E73 /* PickerTextField.h */,
 				AC7A2AAB1E33264A00FE3E73 /* PickerTextField.m */,
+				A82FE3BC1E338D3000012513 /* PickerTextFieldDataSource.h */,
+				A82FE3BD1E338D3000012513 /* PickerTextFieldDataSource.m */,
 			);
 			name = PickerTextField;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			files = (
 				AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */,
 				AC7A2AAC1E33264A00FE3E73 /* GenericPicker.m in Sources */,
+				A82FE3BE1E338D3000012513 /* PickerTextFieldDataSource.m in Sources */,
 				AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */,
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
 				AC7A2AAD1E33264A00FE3E73 /* PickerTextField.m in Sources */,
@@ -330,6 +336,7 @@
 				AC7A2AA61E33261800FE3E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
