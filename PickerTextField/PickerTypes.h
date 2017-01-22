@@ -9,7 +9,7 @@
 #ifndef PickerTypes_h
 #define PickerTypes_h
 
-typedef void(^PickerCompletionHandler) (NSString *selectedString, int selectedRow);
+typedef void(^PickerCompletionHandler) (UIPickerView *pickerView);
 typedef NSArray<NSArray *> PickerData;
 
 

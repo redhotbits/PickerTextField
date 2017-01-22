@@ -38,14 +38,14 @@
     _data = data;
     
     LudiloPickerView *pickerView = [LudiloPickerView new];
-    [pickerView registerWithData:self.data completion:^(NSString *selectedString, int selectedRow) {
+    [pickerView registerWithData:self.data completion:^(UIPickerView *pickerView) {
 
-        [self setSelectedText];
+        [self setSelectedTextInPickerView:pickerView];
     }];
     
     self.inputView = pickerView;
     
-    [self setSelectedText];
+    [self setSelectedTextInPickerView:pickerView];
 }
 
 - (void)setup{
@@ -80,12 +80,11 @@
     self.rightView = self.arrowLabel;
 }
 
-- (void)setSelectedText{
-    NSMutableArray* selected = [NSMutableArray array];
+- (void)setSelectedTextInPickerView:(UIPickerView *) pickerView {
     
-    for(int i=0;i<self.data.count;i++){
-        UIPickerView *pickerView = (UIPickerView *)self.inputView;
-        long selectedIndex = [pickerView selectedRowInComponent:i];
+    NSMutableArray* selected = [NSMutableArray array];
+    for(NSInteger i=0;i<self.data.count;i++){
+        NSInteger selectedIndex = [pickerView selectedRowInComponent:i];
         [selected addObject:self.data[i][selectedIndex]];
     }
     

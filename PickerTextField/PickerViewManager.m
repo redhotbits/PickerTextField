@@ -78,7 +78,7 @@ RHB_SINGLETON_IMPLEMENTATION();
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 
     PickerTuple *tuple = [self.registeredPickers objectForKey:pickerView];
-    tuple.completion(tuple.data[component][row], (int)row);
+    tuple.completion(pickerView);
 }
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
