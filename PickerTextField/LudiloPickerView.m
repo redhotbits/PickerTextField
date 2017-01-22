@@ -7,19 +7,23 @@
 //
 
 #import "LudiloPickerView.h"
-#import "PickerViewManager.h"
+#import "Registrator+UIPickerView.h"
+#import "PickerTuple.h"
 
 
 @implementation LudiloPickerView
 
 -(void)registerWithData:(PickerData *)data font:(UIFont *)font completion:(PickerCompletionHandler)completion{
     
-    [[PickerViewManager sharedInstance] registerPicker:self data:data font:font completion:completion];
+    PickerTuple *tuple = [[PickerTuple alloc] initWithData:data font:font completion:completion];
+    [[Registrator sharedInstance] registratorRegister:self data:tuple];
+    self.dataSource = [Registrator sharedInstance];
+    self.delegate = [Registrator sharedInstance];
 }
 
 -(void)dealloc {
     
-    [[PickerViewManager sharedInstance] unregisterPicker:self];
+    [[Registrator sharedInstance] registratorUnregister:self];
 }
 
 @end

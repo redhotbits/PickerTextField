@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		4BE1C92CAC9A729AA767AEF8 /* Pods_PickerTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */; };
 		A826C6B61E34E81C0080D787 /* LudiloPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826C6B51E34E81C0080D787 /* LudiloPickerView.m */; };
-		A82FE3BE1E338D3000012513 /* PickerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A82FE3BD1E338D3000012513 /* PickerViewManager.m */; };
+		A8977DDA1E350F2B008AFE71 /* Registrator.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DD91E350F2B008AFE71 /* Registrator.m */; };
+		A8977DDD1E3510ED008AFE71 /* PickerTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDC1E3510ED008AFE71 /* PickerTuple.m */; };
+		A8977DE01E3511D9008AFE71 /* Registrator+UIPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDF1E3511D9008AFE71 /* Registrator+UIPickerView.m */; };
 		AC7A2A921E33261800FE3E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A911E33261800FE3E73 /* main.m */; };
 		AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A941E33261800FE3E73 /* AppDelegate.m */; };
 		AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A971E33261800FE3E73 /* ViewController.m */; };
@@ -25,8 +27,12 @@
 		A826C6B31E34E3F10080D787 /* PickerTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerTypes.h; sourceTree = "<group>"; };
 		A826C6B41E34E81C0080D787 /* LudiloPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LudiloPickerView.h; sourceTree = "<group>"; };
 		A826C6B51E34E81C0080D787 /* LudiloPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LudiloPickerView.m; sourceTree = "<group>"; };
-		A82FE3BC1E338D3000012513 /* PickerViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewManager.h; sourceTree = "<group>"; };
-		A82FE3BD1E338D3000012513 /* PickerViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewManager.m; sourceTree = "<group>"; };
+		A8977DD81E350F2B008AFE71 /* Registrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Registrator.h; sourceTree = "<group>"; };
+		A8977DD91E350F2B008AFE71 /* Registrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Registrator.m; sourceTree = "<group>"; };
+		A8977DDB1E3510ED008AFE71 /* PickerTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTuple.h; sourceTree = "<group>"; };
+		A8977DDC1E3510ED008AFE71 /* PickerTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTuple.m; sourceTree = "<group>"; };
+		A8977DDE1E3511D9008AFE71 /* Registrator+UIPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Registrator+UIPickerView.h"; sourceTree = "<group>"; };
+		A8977DDF1E3511D9008AFE71 /* Registrator+UIPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Registrator+UIPickerView.m"; sourceTree = "<group>"; };
 		AC7A2A8D1E33261800FE3E73 /* PickerTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7A2A911E33261800FE3E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC7A2A931E33261800FE3E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,11 +125,15 @@
 			children = (
 				AC7A2AAA1E33264A00FE3E73 /* PickerTextField.h */,
 				AC7A2AAB1E33264A00FE3E73 /* PickerTextField.m */,
-				A82FE3BC1E338D3000012513 /* PickerViewManager.h */,
-				A82FE3BD1E338D3000012513 /* PickerViewManager.m */,
 				A826C6B31E34E3F10080D787 /* PickerTypes.h */,
 				A826C6B41E34E81C0080D787 /* LudiloPickerView.h */,
 				A826C6B51E34E81C0080D787 /* LudiloPickerView.m */,
+				A8977DD81E350F2B008AFE71 /* Registrator.h */,
+				A8977DD91E350F2B008AFE71 /* Registrator.m */,
+				A8977DDB1E3510ED008AFE71 /* PickerTuple.h */,
+				A8977DDC1E3510ED008AFE71 /* PickerTuple.m */,
+				A8977DDE1E3511D9008AFE71 /* Registrator+UIPickerView.h */,
+				A8977DDF1E3511D9008AFE71 /* Registrator+UIPickerView.m */,
 			);
 			name = PickerTextField;
 			sourceTree = "<group>";
@@ -252,10 +262,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */,
-				A82FE3BE1E338D3000012513 /* PickerViewManager.m in Sources */,
+				A8977DE01E3511D9008AFE71 /* Registrator+UIPickerView.m in Sources */,
 				AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */,
+				A8977DDD1E3510ED008AFE71 /* PickerTuple.m in Sources */,
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
 				A826C6B61E34E81C0080D787 /* LudiloPickerView.m in Sources */,
+				A8977DDA1E350F2B008AFE71 /* Registrator.m in Sources */,
 				AC7A2AAD1E33264A00FE3E73 /* PickerTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

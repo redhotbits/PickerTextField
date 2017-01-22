@@ -9,6 +9,8 @@
 #ifndef PickerTypes_h
 #define PickerTypes_h
 
+@import UIKit;
+
 typedef void(^PickerCompletionHandler) (UIPickerView *pickerView);
 typedef NSArray<NSArray *> PickerData;
 
