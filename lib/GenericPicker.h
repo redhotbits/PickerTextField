@@ -7,14 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PickerTypes.h"
 
-typedef void(^completionHandler) (NSString *selectedString, int selectedRow);
 
-@interface GenericPicker : NSObject <UIPickerViewDelegate>
+@interface GenericPicker : NSObject
 
-@property (strong,nonatomic) UIPickerView *picker;
-@property (strong,nonatomic) NSArray<NSArray*>* data;
+@property (nonatomic,readonly) UIPickerView *picker;
 
--(instancetype)initWithData:(NSArray *)pickerData andCompletionHandler:(completionHandler) completion;
+-(instancetype)initWithData:(PickerData *)pickerData andCompletionHandler:(PickerCompletionHandler) completion;
 
 @end

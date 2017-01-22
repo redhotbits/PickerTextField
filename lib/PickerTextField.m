@@ -79,9 +79,9 @@
 - (void)setSelectedText{
     NSMutableArray* selected = [NSMutableArray array];
     
-    for(int i=0;i<self.picker.data.count;i++){
+    for(int i=0;i<self.data.count;i++){
         long selectedIndex = [self.picker.picker selectedRowInComponent:i];
-        [selected addObject:self.picker.data[i][selectedIndex]];
+        [selected addObject:self.data[i][selectedIndex]];
     }
     
     self.text = [selected componentsJoinedByString:@" - "];
