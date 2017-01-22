@@ -85,7 +85,7 @@ RHB_SINGLETON_IMPLEMENTATION();
     
     UILabel *retval = (id)view;
     if (!retval) {
-        retval= [[UILabel alloc] initWithFrame:CGRectMake(8.0f, 0.0f, [pickerView rowSizeForComponent:component].width - 16.0f, [pickerView rowSizeForComponent:component].height)];
+        retval= [[UILabel alloc] initWithFrame:CGRectMake(pickerView.layoutMargins.left, 0, [pickerView rowSizeForComponent:component].width - (pickerView.layoutMargins.left + pickerView.layoutMargins.right), [pickerView rowSizeForComponent:component].height)];
     }
     
     PickerTuple *tuple = [self.registeredPickers objectForKey:pickerView];
