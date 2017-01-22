@@ -62,16 +62,23 @@
     [self addArrowIndicator];
 }
 
-- (BOOL)becomeFirstResponder{
-    if(!self.dismissTapRecognizer){
-        self.dismissTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissPicker)];
+-(UITapGestureRecognizer *)dismissTapRecognizer {
+    
+    if (!_dismissTapRecognizer) {
+        
+        _dismissTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissPicker)];
     }
+    return _dismissTapRecognizer;
+}
 
+- (BOOL)becomeFirstResponder {
+    
     [self.window.subviews.firstObject addGestureRecognizer:self.dismissTapRecognizer];
     return [super becomeFirstResponder];
 }
 
-- (void)dismissPicker{
+- (void)dismissPicker {
+    
     [self.window.subviews.firstObject removeGestureRecognizer:self.dismissTapRecognizer];
     [self resignFirstResponder];
 }
