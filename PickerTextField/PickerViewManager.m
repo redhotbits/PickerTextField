@@ -7,6 +7,7 @@
 //
 
 #import "PickerViewManager.h"
+#import <RHBCastingObjC/NSObject+RHBCasting.h>
 
 
 @interface PickerTuple : NSObject
@@ -83,12 +84,13 @@ RHB_SINGLETON_IMPLEMENTATION();
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
     
-    UILabel *retval = (id)view;
+    UILabel *retval = [UILabel rhb_verifyCast:view];
     if (!retval) {
+        
         CGRect rect = (CGRect){CGPointZero, [pickerView rowSizeForComponent:component]};
         rect.origin.x += pickerView.layoutMargins.left;
         rect.size.width -= pickerView.layoutMargins.left + pickerView.layoutMargins.right;
-        retval= [[UILabel alloc] initWithFrame:rect];
+        retval = [[UILabel alloc] initWithFrame:rect];
     }
     
     PickerTuple *tuple = [self.registeredPickers objectForKey:pickerView];

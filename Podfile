@@ -1,5 +1,6 @@
 use_frameworks!
 
 target 'PickerTextField' do
-  pod 'RHBSnippetsObjC'
+    pod 'RHBSnippetsObjC'
+    pod 'RHBCastingObjC'
 end
