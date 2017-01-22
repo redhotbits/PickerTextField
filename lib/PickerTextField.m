@@ -12,7 +12,7 @@
 
 @implementation PickerTextField
 
-#define INDICATOR_ARROW @"▼  ";
+#define INDICATOR_ARROW_CHARACTER @"▼";
 #define BASE_COLOR [UIColor colorWithRed:0.345 green:0.302 blue:0.239 alpha:1.000]
 
 - (instancetype)initWithCoder:(NSCoder *)coder
@@ -72,9 +72,15 @@
 
 - (void)addArrowIndicator{
     self.arrowLabel = [[UILabel alloc] init];
-    self.arrowLabel.text = INDICATOR_ARROW;
+    self.arrowLabel.text = INDICATOR_ARROW_CHARACTER;
+    self.arrowLabel.textAlignment = NSTextAlignmentCenter;
     self.arrowLabel.textColor = BASE_COLOR;
     [self.arrowLabel sizeToFit];
+    
+    CGRect arrowFrame = self.arrowLabel.frame;
+    arrowFrame.size.width = arrowFrame.size.width + (self.arrowLabel.layoutMargins.left + self.arrowLabel.layoutMargins.right);
+    self.arrowLabel.frame = arrowFrame;
+    
     
     self.rightViewMode = UITextFieldViewModeAlways;
     self.rightView = self.arrowLabel;
