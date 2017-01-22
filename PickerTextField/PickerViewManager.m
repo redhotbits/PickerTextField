@@ -89,7 +89,7 @@ RHB_SINGLETON_IMPLEMENTATION();
     UILabel *retval = [UILabel rhb_verifyCast:view];
     if (!retval) {
         
-        retval = [[UILabel alloc] initWithFrame:(CGRect){CGPointZero, [pickerView rowSizeForComponent:component]}];
+        retval = [[UILabel alloc] init];
     }
     
     retval.text = [self pickerView:pickerView titleForRow:row forComponent:component];
