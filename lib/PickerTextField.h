@@ -7,16 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GenericPicker.h"
+#import "PickerTypes.h"
+
 
 @interface PickerTextField : UITextField <UITextFieldDelegate>
-
 
 @property (nonatomic) UILabel *arrowLabel;
 
 @property (nonatomic) UITapGestureRecognizer *dismissTapRecognizer;
-
-@property (nonatomic) GenericPicker *picker;
 
 @property (nonatomic) PickerData *data;
 

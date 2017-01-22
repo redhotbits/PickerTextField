@@ -7,6 +7,8 @@
 //
 
 #import "PickerTextField.h"
+#import "LudiloPickerView.h"
+
 
 @implementation PickerTextField
 
@@ -35,11 +37,13 @@
     
     _data = data;
     
-    self.picker = [[GenericPicker alloc] initWithData:self.data andCompletionHandler:^(NSString *selectedString, int selectedRow) {
+    LudiloPickerView *pickerView = [LudiloPickerView new];
+    [pickerView registerWithData:self.data completion:^(NSString *selectedString, int selectedRow) {
+
         [self setSelectedText];
     }];
     
-    self.inputView = self.picker.picker;
+    self.inputView = pickerView;
     
     [self setSelectedText];
 }
@@ -80,7 +84,8 @@
     NSMutableArray* selected = [NSMutableArray array];
     
     for(int i=0;i<self.data.count;i++){
-        long selectedIndex = [self.picker.picker selectedRowInComponent:i];
+        UIPickerView *pickerView = (UIPickerView *)self.inputView;
+        long selectedIndex = [pickerView selectedRowInComponent:i];
         [selected addObject:self.data[i][selectedIndex]];
     }
     

@@ -7,7 +7,6 @@
 //
 
 #import "PickerViewManager.h"
-#import "GenericPicker.h"
 
 
 @interface PickerTuple : NSObject
