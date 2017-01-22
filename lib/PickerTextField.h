@@ -12,12 +12,12 @@
 @interface PickerTextField : UITextField <UITextFieldDelegate>
 
 
-@property (strong, nonatomic) UILabel *arrowLabel;
+@property (nonatomic) UILabel *arrowLabel;
 
-@property (strong, nonatomic) UITapGestureRecognizer *dismissTapRecognizer;
+@property (nonatomic) UITapGestureRecognizer *dismissTapRecognizer;
 
-@property (strong, nonatomic) GenericPicker *picker;
+@property (nonatomic) GenericPicker *picker;
 
-@property (strong, nonatomic) NSArray *data;
+@property (nonatomic) PickerData *data;
 
 @end

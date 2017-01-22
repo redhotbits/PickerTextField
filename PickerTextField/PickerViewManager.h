@@ -1,5 +1,5 @@
 //
-//  DataSourceManager.h
+//  PickerViewManager.h
 //  PickerTextField
 //
 //  Created by Lazar Otasevic on 1/21/17.
@@ -8,15 +8,13 @@
 
 @import UIKit;
 #import <RHBSnippetsObjC/RHBSnippets.h>
+#import "PickerTypes.h"
 
-typedef NSArray<NSArray *>* PickerData;
-typedef PickerData(^DataGetterBlockType)();
-
-@interface DataSourceManager : NSObject
+@interface PickerViewManager : NSObject
 
 RHB_SINGLETON_DECLARATION();
 
--(void)registerPicker:(UIPickerView *)pickerView dataGetterBlock:(DataGetterBlockType)dataGetterBlock;
+-(void)registerPicker:(UIPickerView *)pickerView data:(PickerData *)data completion:(PickerCompletionHandler)completion;
 -(void)unregisterPicker:(UIPickerView *)pickerView;
 
 @end

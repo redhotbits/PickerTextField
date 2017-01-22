@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4BE1C92CAC9A729AA767AEF8 /* Pods_PickerTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */; };
-		A82FE3BE1E338D3000012513 /* DataSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A82FE3BD1E338D3000012513 /* DataSourceManager.m */; };
+		A82FE3BE1E338D3000012513 /* PickerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A82FE3BD1E338D3000012513 /* PickerViewManager.m */; };
 		AC7A2A921E33261800FE3E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A911E33261800FE3E73 /* main.m */; };
 		AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A941E33261800FE3E73 /* AppDelegate.m */; };
 		AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A971E33261800FE3E73 /* ViewController.m */; };
@@ -22,8 +22,9 @@
 /* Begin PBXFileReference section */
 		4C87EDABB993D3D082B28C17 /* Pods-PickerTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickerTextField/Pods-PickerTextField.release.xcconfig"; sourceTree = "<group>"; };
 		8B73ACFC2F4D56DAD93158D5 /* Pods-PickerTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickerTextField/Pods-PickerTextField.debug.xcconfig"; sourceTree = "<group>"; };
-		A82FE3BC1E338D3000012513 /* DataSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceManager.h; sourceTree = "<group>"; };
-		A82FE3BD1E338D3000012513 /* DataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSourceManager.m; sourceTree = "<group>"; };
+		A826C6B31E34E3F10080D787 /* PickerTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerTypes.h; sourceTree = "<group>"; };
+		A82FE3BC1E338D3000012513 /* PickerViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewManager.h; sourceTree = "<group>"; };
+		A82FE3BD1E338D3000012513 /* PickerViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewManager.m; sourceTree = "<group>"; };
 		AC7A2A8D1E33261800FE3E73 /* PickerTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7A2A911E33261800FE3E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC7A2A931E33261800FE3E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,8 +121,9 @@
 				AC7A2AA91E33264A00FE3E73 /* GenericPicker.m */,
 				AC7A2AAA1E33264A00FE3E73 /* PickerTextField.h */,
 				AC7A2AAB1E33264A00FE3E73 /* PickerTextField.m */,
-				A82FE3BC1E338D3000012513 /* DataSourceManager.h */,
-				A82FE3BD1E338D3000012513 /* DataSourceManager.m */,
+				A82FE3BC1E338D3000012513 /* PickerViewManager.h */,
+				A82FE3BD1E338D3000012513 /* PickerViewManager.m */,
+				A826C6B31E34E3F10080D787 /* PickerTypes.h */,
 			);
 			name = PickerTextField;
 			sourceTree = "<group>";
@@ -251,7 +253,7 @@
 			files = (
 				AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */,
 				AC7A2AAC1E33264A00FE3E73 /* GenericPicker.m in Sources */,
-				A82FE3BE1E338D3000012513 /* DataSourceManager.m in Sources */,
+				A82FE3BE1E338D3000012513 /* PickerViewManager.m in Sources */,
 				AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */,
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
 				AC7A2AAD1E33264A00FE3E73 /* PickerTextField.m in Sources */,
