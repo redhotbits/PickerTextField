@@ -10,6 +10,13 @@
 #import "LudiloPickerView.h"
 
 
+@interface PickerTextField()
+
+@property (nonatomic) UITapGestureRecognizer *dismissTapRecognizer;
+
+@end
+
+
 @implementation PickerTextField
 
 #define INDICATOR_ARROW_CHARACTER @"▼";

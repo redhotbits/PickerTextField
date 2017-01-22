@@ -14,8 +14,6 @@
 
 @property (nonatomic) UILabel *arrowLabel;
 
-@property (nonatomic) UITapGestureRecognizer *dismissTapRecognizer;
-
 @property (nonatomic) PickerData *data;
 
 @end
