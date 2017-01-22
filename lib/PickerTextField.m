@@ -42,10 +42,8 @@
 
         [self setSelectedTextInPickerView:pickerView];
     }];
-    
-    self.inputView = pickerView;
-    
     [self setSelectedTextInPickerView:pickerView];
+    self.inputView = pickerView;
 }
 
 - (void)setup{
