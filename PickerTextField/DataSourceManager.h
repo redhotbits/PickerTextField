@@ -10,13 +10,12 @@
 #import <RHBSnippetsObjC/RHBSnippets.h>
 
 typedef NSArray<NSArray *>* PickerData;
-typedef PickerData(^DataGetterBlockType)();
 
 @interface DataSourceManager : NSObject
 
 RHB_SINGLETON_DECLARATION();
 
--(void)registerPicker:(UIPickerView *)pickerView dataGetterBlock:(DataGetterBlockType)dataGetterBlock;
+-(void)registerPicker:(UIPickerView *)pickerView data:(PickerData)data;
 -(void)unregisterPicker:(UIPickerView *)pickerView;
 
 @end

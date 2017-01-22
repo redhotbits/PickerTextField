@@ -28,9 +28,9 @@ RHB_SINGLETON_IMPLEMENTATION();
     return self;
 }
 
--(void)registerPicker:(UIPickerView *)pickerView dataGetterBlock:(DataGetterBlockType)dataGetterBlock {
+-(void)registerPicker:(UIPickerView *)pickerView data:(PickerData)data {
     
-    [self.registeredPickers setObject:dataGetterBlock forKey:pickerView];
+    [self.registeredPickers setObject:data forKey:pickerView];
     pickerView.dataSource = self;
 }
 
@@ -43,20 +43,20 @@ RHB_SINGLETON_IMPLEMENTATION();
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     
-    DataGetterBlockType dataGetter = [self.registeredPickers objectForKey:pickerView];
-    return dataGetter().count;
+    PickerData data = [self.registeredPickers objectForKey:pickerView];
+    return data.count;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     
-    DataGetterBlockType dataGetter = [self.registeredPickers objectForKey:pickerView];
-    return dataGetter()[component].count;
+    PickerData data = [self.registeredPickers objectForKey:pickerView];
+    return data[component].count;
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     
-    DataGetterBlockType dataGetter = [self.registeredPickers objectForKey:pickerView];
-    return dataGetter()[component][row];
+    PickerData data = [self.registeredPickers objectForKey:pickerView];
+    return data[component][row];
 }
 
 

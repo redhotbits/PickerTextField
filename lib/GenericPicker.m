@@ -22,7 +22,7 @@
 		self.picker.delegate = self;
 		self.data = pickerData;
 		self.compBlock = completion;
-        [[DataSourceManager sharedInstance] registerPicker:self.picker dataGetterBlock:^{return pickerData;}];
+        [[DataSourceManager sharedInstance] registerPicker:self.picker data:self.data];
 	}
 	return self;
 }
