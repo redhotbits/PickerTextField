@@ -14,7 +14,7 @@
 
 RHB_SINGLETON_DECLARATION();
 
--(void)registerPicker:(UIPickerView *)pickerView data:(PickerData *)data completion:(PickerCompletionHandler)completion;
+-(void)registerPicker:(UIPickerView *)pickerView data:(PickerData *)data font:(UIFont *)font completion:(PickerCompletionHandler)completion;
 -(void)unregisterPicker:(UIPickerView *)pickerView;
 
 @end

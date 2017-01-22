@@ -38,7 +38,7 @@
     _data = data;
     
     LudiloPickerView *pickerView = [LudiloPickerView new];
-    [pickerView registerWithData:self.data completion:^(UIPickerView *pickerView) {
+    [pickerView registerWithData:self.data font:[UIFont systemFontOfSize:16] completion:^(UIPickerView *pickerView) {
 
         [self setSelectedTextInPickerView:pickerView];
     }];

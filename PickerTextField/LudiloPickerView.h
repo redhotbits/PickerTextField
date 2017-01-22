@@ -12,6 +12,6 @@
 
 @interface LudiloPickerView : UIPickerView
 
--(void)registerWithData:(PickerData *)data completion:(PickerCompletionHandler)completion;
+-(void)registerWithData:(PickerData *)data font:(UIFont *)font completion:(PickerCompletionHandler)completion;
 
 @end

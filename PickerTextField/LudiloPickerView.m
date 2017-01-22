@@ -12,9 +12,9 @@
 
 @implementation LudiloPickerView
 
--(void)registerWithData:(PickerData *)data completion:(PickerCompletionHandler)completion {
+-(void)registerWithData:(PickerData *)data font:(UIFont *)font completion:(PickerCompletionHandler)completion{
     
-    [[PickerViewManager sharedInstance] registerPicker:self data:data completion:completion];
+    [[PickerViewManager sharedInstance] registerPicker:self data:data font:font completion:completion];
 }
 
 -(void)dealloc {

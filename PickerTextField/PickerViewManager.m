@@ -14,6 +14,7 @@
 
 @property PickerData *data;
 @property PickerCompletionHandler completion;
+@property UIFont *font;
 
 @end @implementation PickerTuple @end
 
@@ -39,11 +40,12 @@ RHB_SINGLETON_IMPLEMENTATION();
     return self;
 }
 
--(void)registerPicker:(UIPickerView *)pickerView data:(PickerData *)data completion:(PickerCompletionHandler)completion {
+-(void)registerPicker:(UIPickerView *)pickerView data:(PickerData *)data font:(UIFont *)font completion:(PickerCompletionHandler)completion {
     
     PickerTuple *tuple = [PickerTuple new];
     tuple.data = data;
     tuple.completion = completion;
+    tuple.font = font;
     [self.registeredPickers setObject:tuple forKey:pickerView];
     pickerView.dataSource = self;
     pickerView.delegate = self;
@@ -90,9 +92,9 @@ RHB_SINGLETON_IMPLEMENTATION();
         retval = [[UILabel alloc] initWithFrame:(CGRect){CGPointZero, [pickerView rowSizeForComponent:component]}];
     }
     
+    retval.text = [self pickerView:pickerView titleForRow:row forComponent:component];
     PickerTuple *tuple = [self.registeredPickers objectForKey:pickerView];
-    retval.text = tuple.data[component][row];
-    retval.font = [UIFont systemFontOfSize:16];
+    retval.font = tuple.font;
     retval.textAlignment = NSTextAlignmentCenter;
     
     return retval;
