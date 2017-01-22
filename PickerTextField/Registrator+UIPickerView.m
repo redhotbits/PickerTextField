@@ -46,7 +46,7 @@
     UILabel *retval = [UILabel rhb_verifyCast:view];
     if (!retval) {
         
-        retval = [[UILabel alloc] initWithFrame:(CGRect){CGPointZero, [pickerView rowSizeForComponent:component]}];
+        retval = [UILabel new];
     }
     
     retval.text = [self pickerView:pickerView titleForRow:row forComponent:component];
