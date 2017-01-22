@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "PickerTypes.h"
+#import "LudiloTextField.h"
 
 
-@interface PickerTextField : UITextField <UITextFieldDelegate>
+@interface PickerTextField : LudiloTextField
 
 @property (nonatomic) UILabel *arrowLabel;
 

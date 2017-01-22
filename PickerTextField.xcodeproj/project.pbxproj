@@ -12,6 +12,8 @@
 		A8977DDA1E350F2B008AFE71 /* Registrator.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DD91E350F2B008AFE71 /* Registrator.m */; };
 		A8977DDD1E3510ED008AFE71 /* PickerTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDC1E3510ED008AFE71 /* PickerTuple.m */; };
 		A8977DE01E3511D9008AFE71 /* Registrator+UIPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDF1E3511D9008AFE71 /* Registrator+UIPickerView.m */; };
+		A8977DE31E3517E6008AFE71 /* Registrator+UITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DE21E3517E6008AFE71 /* Registrator+UITextField.m */; };
+		A8977DE61E3518CE008AFE71 /* LudiloTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DE51E3518CE008AFE71 /* LudiloTextField.m */; };
 		AC7A2A921E33261800FE3E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A911E33261800FE3E73 /* main.m */; };
 		AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A941E33261800FE3E73 /* AppDelegate.m */; };
 		AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A971E33261800FE3E73 /* ViewController.m */; };
@@ -33,6 +35,10 @@
 		A8977DDC1E3510ED008AFE71 /* PickerTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTuple.m; sourceTree = "<group>"; };
 		A8977DDE1E3511D9008AFE71 /* Registrator+UIPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Registrator+UIPickerView.h"; sourceTree = "<group>"; };
 		A8977DDF1E3511D9008AFE71 /* Registrator+UIPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Registrator+UIPickerView.m"; sourceTree = "<group>"; };
+		A8977DE11E3517E6008AFE71 /* Registrator+UITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Registrator+UITextField.h"; sourceTree = "<group>"; };
+		A8977DE21E3517E6008AFE71 /* Registrator+UITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Registrator+UITextField.m"; sourceTree = "<group>"; };
+		A8977DE41E3518CE008AFE71 /* LudiloTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LudiloTextField.h; sourceTree = "<group>"; };
+		A8977DE51E3518CE008AFE71 /* LudiloTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LudiloTextField.m; sourceTree = "<group>"; };
 		AC7A2A8D1E33261800FE3E73 /* PickerTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7A2A911E33261800FE3E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC7A2A931E33261800FE3E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +140,10 @@
 				A8977DDC1E3510ED008AFE71 /* PickerTuple.m */,
 				A8977DDE1E3511D9008AFE71 /* Registrator+UIPickerView.h */,
 				A8977DDF1E3511D9008AFE71 /* Registrator+UIPickerView.m */,
+				A8977DE11E3517E6008AFE71 /* Registrator+UITextField.h */,
+				A8977DE21E3517E6008AFE71 /* Registrator+UITextField.m */,
+				A8977DE41E3518CE008AFE71 /* LudiloTextField.h */,
+				A8977DE51E3518CE008AFE71 /* LudiloTextField.m */,
 			);
 			name = PickerTextField;
 			sourceTree = "<group>";
@@ -261,11 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8977DE31E3517E6008AFE71 /* Registrator+UITextField.m in Sources */,
 				AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */,
 				A8977DE01E3511D9008AFE71 /* Registrator+UIPickerView.m in Sources */,
 				AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */,
 				A8977DDD1E3510ED008AFE71 /* PickerTuple.m in Sources */,
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
+				A8977DE61E3518CE008AFE71 /* LudiloTextField.m in Sources */,
 				A826C6B61E34E81C0080D787 /* LudiloPickerView.m in Sources */,
 				A8977DDA1E350F2B008AFE71 /* Registrator.m in Sources */,
 				AC7A2AAD1E33264A00FE3E73 /* PickerTextField.m in Sources */,

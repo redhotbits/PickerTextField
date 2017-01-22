@@ -8,6 +8,7 @@
 
 #import "PickerTextField.h"
 #import "LudiloPickerView.h"
+#import "Registrator+UITextField.h"
 
 
 @interface PickerTextField()
@@ -54,7 +55,7 @@
 }
 
 - (void)setup{
-    self.delegate = self;
+    [self registerDelegate];
     self.textAlignment = NSTextAlignmentCenter;
     self.textColor = BASE_COLOR;
     self.tintColor = [UIColor clearColor];
@@ -109,25 +110,6 @@
         self.textColor = self.arrowLabel.textColor = [UIColor lightGrayColor];
     }
     [super setEnabled:enabled];
-}
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField{
-    [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionTransitionCurlUp animations:^{
-        self.rightView.transform = CGAffineTransformMakeScale(1, -1);
-        
-        self.layer.cornerRadius=6.0f;
-        self.layer.masksToBounds=YES;
-        
-        self.layer.borderColor= [BASE_COLOR CGColor];
-        self.layer.borderWidth= 1.0f;
-    } completion:nil];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField{
-    [UIView animateWithDuration:0.4 delay:0 options:UIViewAnimationOptionTransitionCurlDown animations:^{
-        self.rightView.transform=CGAffineTransformMakeRotation( 0 );
-    } completion:nil];
-    self.layer.borderColor=[[UIColor clearColor] CGColor];
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
