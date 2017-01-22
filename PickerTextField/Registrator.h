@@ -14,8 +14,6 @@
 
 RHB_SINGLETON_DECLARATION();
 
--(void)registratorRegister:(id)key data:(id)data;
--(void)registratorUnregister:(id)key;
--(id)dataForKey:(id)key;
+@property (nonatomic, readonly) NSMapTable *registeredWeakToStrong;
 
 @end

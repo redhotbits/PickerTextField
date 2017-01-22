@@ -9,13 +9,6 @@
 #import "Registrator.h"
 
 
-@interface Registrator()
-
-@property (nonatomic) NSMapTable *registered;
-
-@end
-
-
 @implementation Registrator
 
 RHB_SINGLETON_IMPLEMENTATION();
@@ -24,24 +17,9 @@ RHB_SINGLETON_IMPLEMENTATION();
     
     if (self = [super init]) {
         
-        _registered = [NSMapTable weakToStrongObjectsMapTable];
+        _registeredWeakToStrong = [NSMapTable weakToStrongObjectsMapTable];
     }
     return self;
-}
-
--(void)registratorRegister:(id)key data:(id)data {
-
-    [self.registered setObject:data forKey:key];
-}
-
--(void)registratorUnregister:(id)key {
-    
-    [self.registered removeObjectForKey:key];
-}
-
--(id)dataForKey:(id)key {
-    
-    return [self.registered objectForKey:key];
 }
 
 @end

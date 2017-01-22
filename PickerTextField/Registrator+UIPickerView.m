@@ -17,19 +17,19 @@
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     
-    PickerTuple *tuple = [self dataForKey:pickerView];
+    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
     return tuple.data.count;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     
-    PickerTuple *tuple = [self dataForKey:pickerView];
+    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
     return tuple.data[component].count;
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     
-    PickerTuple *tuple = [self dataForKey:pickerView];
+    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
     return tuple.data[component][row];
 }
 
@@ -37,7 +37,7 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
-    PickerTuple *tuple = [self dataForKey:pickerView];
+    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
     tuple.completion(pickerView);
 }
 
@@ -50,7 +50,7 @@
     }
     
     retval.text = [self pickerView:pickerView titleForRow:row forComponent:component];
-    PickerTuple *tuple = [self dataForKey:pickerView];
+    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
     retval.font = tuple.font;
     retval.textAlignment = NSTextAlignmentCenter;
     

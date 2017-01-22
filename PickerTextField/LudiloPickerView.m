@@ -16,14 +16,14 @@
 -(void)registerWithData:(PickerData *)data font:(UIFont *)font completion:(PickerCompletionHandler)completion{
     
     PickerTuple *tuple = [[PickerTuple alloc] initWithData:data font:font completion:completion];
-    [[Registrator sharedInstance] registratorRegister:self data:tuple];
+    [[Registrator sharedInstance].registeredWeakToStrong setObject:tuple forKey:self];
     self.dataSource = [Registrator sharedInstance];
     self.delegate = [Registrator sharedInstance];
 }
 
 -(void)dealloc {
     
-    [[Registrator sharedInstance] registratorUnregister:self];
+    [[Registrator sharedInstance].registeredWeakToStrong removeObjectForKey:self];
 }
 
 @end

@@ -12,5 +12,4 @@
 
 @interface Registrator(UIPickerView)<UIPickerViewDataSource, UIPickerViewDelegate>
 
-
 @end
