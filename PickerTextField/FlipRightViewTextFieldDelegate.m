@@ -7,7 +7,7 @@
 //
 
 #import "FlipRightViewTextFieldDelegate.h"
-
+#import "UIView+RHB.h"
 
 @implementation FlipRightViewTextFieldDelegate
 
@@ -15,18 +15,12 @@ RHB_SINGLETON_IMPLEMENTATION();
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionTransitionCurlUp animations:^{
-        
-        textField.rightView.transform = CGAffineTransformMakeScale(1, -1);
-    } completion:nil];
+    [textField.rightView rhb_animateFlipUp:NO];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     
-    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionTransitionCurlDown animations:^{
-        
-        textField.rightView.transform = CGAffineTransformIdentity;
-    } completion:nil];
+    [textField.rightView rhb_animateFlipUp:YES];
 }
 
 @end
