@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextFieldWithBlocks.h"
 
 
-@interface MultiArrayTextField : UITextField
+@interface MultiArrayTextField : TextFieldWithBlocks
 
 @property (nonatomic) UILabel *arrowLabel;
 
