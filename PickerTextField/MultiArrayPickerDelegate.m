@@ -1,44 +1,46 @@
 //
-//  Registrator+UIPickerView.m
-//  PickerTextField
+//  MultiArrayPickerDelegate.m
+//  MultiArrayTextField
 //
 //  Created by Lazar Otasevic on 1/22/17.
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
 //
 
-#import "Registrator+UIPickerView.h"
+#import "MultiArrayPickerDelegate.h"
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
-#import "PickerTuple.h"
+#import "MultiArrayPickerView.h"
 
 
-@implementation Registrator(UIPickerView)
+@implementation MultiArrayPickerDelegate
+
+RHB_SINGLETON_IMPLEMENTATION();
 
 #pragma mark - data source delegate
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     
-    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
-    return tuple.data.count;
+    MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
+    return casted.data.count;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     
-    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
-    return tuple.data[component].count;
+    MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
+    return casted.data[component].count;
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     
-    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
-    return tuple.data[component][row];
+    MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
+    return casted.data[component][row];
 }
 
 #pragma mark - picker view delegate
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
-    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
-    tuple.completion(pickerView);
+    MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
+    casted.selectionHandler(casted);
 }
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
@@ -50,8 +52,8 @@
     }
     
     retval.text = [self pickerView:pickerView titleForRow:row forComponent:component];
-    PickerTuple *tuple = [PickerTuple rhb_verifyCast:[self.registeredWeakToStrong objectForKey:pickerView]];
-    retval.font = tuple.font;
+    MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
+    retval.font = casted.dataFont;
     retval.textAlignment = NSTextAlignmentCenter;
     
     return retval;

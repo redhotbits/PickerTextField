@@ -1,24 +1,24 @@
 //
-//  PickerTextField.m
+//  MultiArrayTextField.m
 //  Saath Sangeet
 //
 //  Created by Mirko Tomic on 1/15/17.
 //  Copyright © 2017 SMI Media Tech LLC. All rights reserved.
 //
 
-#import "PickerTextField.h"
-#import "LudiloPickerView.h"
-#import "Registrator+UITextField.h"
+#import "MultiArrayTextField.h"
+#import "MultiArrayPickerView.h"
+#import "FlipRightViewTextFieldDelegate.h"
 
 
-@interface PickerTextField()
+@interface MultiArrayTextField()
 
 @property (nonatomic) UITapGestureRecognizer *dismissTapRecognizer;
 
 @end
 
 
-@implementation PickerTextField
+@implementation MultiArrayTextField
 
 #define INDICATOR_ARROW_CHARACTER @"▼";
 #define BASE_COLOR [UIColor colorWithRed:0.345 green:0.302 blue:0.239 alpha:1.000]
@@ -45,8 +45,8 @@
     
     _data = data;
     
-    LudiloPickerView *pickerView = [LudiloPickerView new];
-    [pickerView registerWithData:self.data font:[UIFont systemFontOfSize:16] completion:^(UIPickerView *pickerView) {
+    MultiArrayPickerView *pickerView = [MultiArrayPickerView new];
+    [pickerView registerDelegatesWithData:self.data dataFont:[UIFont systemFontOfSize:16] selectionHandler:^(MultiArrayPickerView *pickerView) {
 
         [self setSelectedTextInPickerView:pickerView];
     }];
@@ -55,7 +55,7 @@
 }
 
 - (void)setup{
-    [self registerDelegate];
+    self.delegate = [FlipRightViewTextFieldDelegate sharedInstance];
     self.textAlignment = NSTextAlignmentCenter;
     self.textColor = BASE_COLOR;
     self.tintColor = [UIColor clearColor];

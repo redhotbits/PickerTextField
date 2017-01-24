@@ -1,5 +1,5 @@
 //
-//  PickerTextField.h
+//  MultiArrayTextField.h
 //  Saath Sangeet
 //
 //  Created by Mirko Tomic on 1/15/17.
@@ -7,14 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PickerTypes.h"
-#import "LudiloTextField.h"
 
 
-@interface PickerTextField : LudiloTextField
+@interface MultiArrayTextField : UITextField
 
 @property (nonatomic) UILabel *arrowLabel;
 
-@property (nonatomic) PickerData *data;
+@property (nonatomic) NSArray<NSArray *> *data;
 
 @end
