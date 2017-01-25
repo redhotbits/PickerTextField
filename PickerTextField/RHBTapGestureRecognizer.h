@@ -15,6 +15,6 @@ typedef void(^ActionBlock)(RHBTapGestureRecognizer *recognizer);
 @property (nonatomic) ActionBlock actionBlock;
 
 -(instancetype)init NS_DESIGNATED_INITIALIZER;
--(instancetype)initWithTarget:(nullable id)target action:(nullable SEL)action NS_UNAVAILABLE;
+-(instancetype)initWithTarget:(id)target action:(SEL)action NS_UNAVAILABLE;
 
 @end
