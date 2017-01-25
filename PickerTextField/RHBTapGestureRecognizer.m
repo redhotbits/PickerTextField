@@ -9,22 +9,11 @@
 #import "RHBTapGestureRecognizer.h"
 
 
-@interface RHBTapGestureRecognizer()
-
-@property (nonatomic) ActionBlock actionBlock;
-
-@end
-
-
 @implementation RHBTapGestureRecognizer
 
--(instancetype)initWithBlock:(ActionBlock)actionBlock {
+-(instancetype)init {
     
-    if (self = [super initWithTarget:self action:@selector(tapExecutor)]) {
-        
-        _actionBlock = actionBlock;
-    }
-    return self;
+    return (self = [super initWithTarget:nil action:nil]);
 }
 
 -(void)tapExecutor {
@@ -32,10 +21,19 @@
     self.actionBlock(self);
 }
 
--(void)dealloc {
+-(void)setActionBlock:(ActionBlock)actionBlock {
     
     [self removeTarget:self action:@selector(tapExecutor)];
-    _actionBlock = nil;
+    if (actionBlock) {
+
+        [self addTarget:self action:@selector(tapExecutor)];
+    }
+    _actionBlock = actionBlock;
+}
+
+-(void)dealloc {
+    
+    [self setActionBlock:nil];
 }
 
 @end

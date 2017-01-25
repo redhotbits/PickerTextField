@@ -10,13 +10,7 @@
 #import "MultiArrayPickerView.h"
 #import "MultiArrayTextFieldDelegate.h"
 #import <BlocksKit/BlocksKit.h>
-
-
-@interface MultiArrayTextField()
-
-@property (nonatomic) UITapGestureRecognizer *dismissTapRecognizer;
-
-@end
+#import "RHBTapGestureRecognizer.h"
 
 
 @implementation MultiArrayTextField
@@ -46,7 +40,7 @@
     self.text = [strings componentsJoinedByString:@" - "];
 }
 
--(UIView *)inputView {
+-(UIView *)makeInputView {
     
     MultiArrayPickerView *multiArrayPickerView = [MultiArrayPickerView new];
     multiArrayPickerView.multiArrayTextField = self;
@@ -60,25 +54,20 @@
     return multiArrayPickerView;
 }
 
--(UITapGestureRecognizer *)dismissTapRecognizer {
-    
-    if (!_dismissTapRecognizer) {
-        
-        _dismissTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissPicker)];
-    }
-    return _dismissTapRecognizer;
-}
-
 - (BOOL)becomeFirstResponder {
     
-    [self.window.subviews.firstObject addGestureRecognizer:self.dismissTapRecognizer];
+    self.inputView = [self makeInputView];
+    RHBTapGestureRecognizer *tap = [RHBTapGestureRecognizer new];
+    __weak UIView *view = UIApplication.sharedApplication.keyWindow.subviews.firstObject;
+    __weak typeof(self) weakSelf = self;
+    tap.actionBlock = ^(RHBTapGestureRecognizer *recognizer){
+        
+        weakSelf.inputView = nil;
+        [weakSelf resignFirstResponder];
+        [view removeGestureRecognizer:recognizer];
+    };
+    [view addGestureRecognizer:tap];
     return [super becomeFirstResponder];
-}
-
-- (void)dismissPicker {
-    
-    [self.window.subviews.firstObject removeGestureRecognizer:self.dismissTapRecognizer];
-    [self resignFirstResponder];
 }
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender

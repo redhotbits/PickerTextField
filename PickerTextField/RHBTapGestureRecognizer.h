@@ -11,9 +11,10 @@
 
 @interface RHBTapGestureRecognizer : UITapGestureRecognizer
 
-typedef void(^ActionBlock)(UITapGestureRecognizer *recognizer);
+typedef void(^ActionBlock)(RHBTapGestureRecognizer *recognizer);
+@property (nonatomic) ActionBlock actionBlock;
 
--(instancetype)initWithBlock:(ActionBlock)actionBlock NS_DESIGNATED_INITIALIZER;
+-(instancetype)init NS_DESIGNATED_INITIALIZER;
 -(instancetype)initWithTarget:(nullable id)target action:(nullable SEL)action NS_UNAVAILABLE;
 
 @end
