@@ -16,6 +16,6 @@
 +(SelectBlock)rhb_defaultSelectBlock;
 +(ViewBlock)rhb_defaultViewBlock;
 
--(void)setupMirko;
+-(void)rhb_setupMirkoStyle;
 
 @end

@@ -62,7 +62,7 @@
     };
 }
 
--(void)setupMirko {
+-(void)rhb_setupMirkoStyle {
     
     self.selectBlock = [[self class] rhb_defaultSelectBlock];
     self.viewBlock = [[self class] rhb_defaultViewBlock];
