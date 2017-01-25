@@ -44,7 +44,6 @@
     
     MultiArrayPickerView *multiArrayPickerView = [MultiArrayPickerView new];
     multiArrayPickerView.multiArrayTextField = self;
-    self.delegate = [MultiArrayTextFieldDelegate sharedInstance];
 
     [_selections enumerateObjectsUsingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
        
@@ -52,6 +51,12 @@
     }];
     
     return multiArrayPickerView;
+}
+
+-(BOOL)resignFirstResponder {
+    
+    self.inputView = nil;
+    return [super resignFirstResponder];
 }
 
 - (BOOL)becomeFirstResponder {
@@ -62,7 +67,6 @@
     __weak typeof(self) weakSelf = self;
     tap.actionBlock = ^(RHBTapGestureRecognizer *recognizer){
         
-        weakSelf.inputView = nil;
         [weakSelf resignFirstResponder];
         [view removeGestureRecognizer:recognizer];
     };

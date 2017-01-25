@@ -8,6 +8,8 @@
 
 #import "MultiArrayPickerView.h"
 #import "MultiArrayPickerDelegate.h"
+#import "MultiArrayTextField.h"
+#import "MultiArrayTextFieldDelegate.h"
 
 
 @implementation MultiArrayPickerView
@@ -18,7 +20,7 @@
     
     self.dataSource = [MultiArrayPickerDelegate sharedInstance];
     self.delegate = [MultiArrayPickerDelegate sharedInstance];
-    
+    multiArrayTextField.delegate = [MultiArrayTextFieldDelegate sharedInstance];
 }
 
 @end
