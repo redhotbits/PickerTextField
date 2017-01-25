@@ -10,6 +10,7 @@
 		4BE1C92CAC9A729AA767AEF8 /* Pods_PickerTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */; };
 		A82022291E3829180079DEDF /* MultiArrayTextField+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */; };
 		A826C6B61E34E81C0080D787 /* MultiArrayPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */; };
+		A8296EFE1E38F3BA00D13EDA /* UILabel+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8296EFD1E38F3BA00D13EDA /* UILabel+RHB.m */; };
 		A878E94E1E378D220058B451 /* TextFieldWithBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A878E94D1E378D220058B451 /* TextFieldWithBlocks.m */; };
 		A878E9511E379E100058B451 /* UIView+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A878E9501E379E100058B451 /* UIView+RHB.m */; };
 		A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */; };
@@ -30,6 +31,9 @@
 		A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MultiArrayTextField+RHB.m"; sourceTree = "<group>"; };
 		A826C6B41E34E81C0080D787 /* MultiArrayPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayPickerView.h; sourceTree = "<group>"; };
 		A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiArrayPickerView.m; sourceTree = "<group>"; };
+		A8296EFC1E38F3BA00D13EDA /* UILabel+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RHB.h"; sourceTree = "<group>"; };
+		A8296EFD1E38F3BA00D13EDA /* UILabel+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RHB.m"; sourceTree = "<group>"; };
+		A8296F021E39117000D13EDA /* RHBTextFieldWithPickerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBTextFieldWithPickerProtocol.h; sourceTree = "<group>"; };
 		A878E94C1E378D220058B451 /* TextFieldWithBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldWithBlocks.h; sourceTree = "<group>"; };
 		A878E94D1E378D220058B451 /* TextFieldWithBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldWithBlocks.m; sourceTree = "<group>"; };
 		A878E94F1E379E100058B451 /* UIView+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RHB.h"; sourceTree = "<group>"; };
@@ -142,6 +146,9 @@
 				A878E9501E379E100058B451 /* UIView+RHB.m */,
 				A82022271E3829180079DEDF /* MultiArrayTextField+RHB.h */,
 				A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */,
+				A8296EFC1E38F3BA00D13EDA /* UILabel+RHB.h */,
+				A8296EFD1E38F3BA00D13EDA /* UILabel+RHB.m */,
+				A8296F021E39117000D13EDA /* RHBTextFieldWithPickerProtocol.h */,
 			);
 			name = PickerTextField;
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 				AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */,
 				A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */,
 				A878E94E1E378D220058B451 /* TextFieldWithBlocks.m in Sources */,
+				A8296EFE1E38F3BA00D13EDA /* UILabel+RHB.m in Sources */,
 				AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */,
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
 				A826C6B61E34E81C0080D787 /* MultiArrayPickerView.m in Sources */,

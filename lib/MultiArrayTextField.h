@@ -17,6 +17,9 @@ typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInte
 @property (nonatomic) NSArray<NSArray *> *data;
 @property (nonatomic) SelectBlock selectBlock;
 @property (nonatomic) ViewBlock viewBlock;
+@property (nonatomic) NSArray<NSNumber *> *selections;
+
+-(void)updateTextFromSelections;
 
 @end
 

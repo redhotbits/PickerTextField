@@ -12,7 +12,6 @@
 @interface MultiArrayTextField(RHB)
 
 -(void)rhb_addRightFlipView:(UIView *)view;
-+(UILabel *)rhb_arrowLabel;
 +(SelectBlock)rhb_defaultSelectBlock;
 +(ViewBlock)rhb_defaultViewBlock;
 

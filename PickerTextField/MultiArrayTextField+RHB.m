@@ -8,7 +8,13 @@
 
 #import "MultiArrayTextField+RHB.h"
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
+#import "UILabel+RHB.h"
+#import <BlocksKit/BlocksKit.h>
+#import "RHBTextFieldWithPickerProtocol.h"
 
+
+@interface MultiArrayTextField()<RHBTextFieldWithPickerProtocol>
+@end
 
 @implementation MultiArrayTextField(RHB)
 
@@ -20,27 +26,19 @@
     self.rightView = view;
 }
 
-+(UILabel *)rhb_arrowLabel {
-    
-    UILabel *arrow = [UILabel new];
-    arrow.text = @"▼";
-    arrow.textAlignment = NSTextAlignmentCenter;
-    return arrow;
-}
-
 +(SelectBlock)rhb_defaultSelectBlock {
 
     return ^(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component) {
         
         MultiArrayTextField *multiArrayPickerField = [MultiArrayTextField rhb_verifyCast:field];
-        NSArray<NSArray *> *data = multiArrayPickerField.data;
-        NSMutableArray* selected = [NSMutableArray array];
-        for(NSInteger i=0;i<data.count;i++){
-            NSInteger selectedIndex = [pickerView selectedRowInComponent:i];
-            [selected addObject:data[i][selectedIndex]];
+        NSMutableArray<NSNumber *> *internalSelections = [multiArrayPickerField internalSelections];
+        NSNumber *oldrow = internalSelections[component];
+        if (oldrow.integerValue == row) {
+            
+            return;
         }
-        
-        field.text = [selected componentsJoinedByString:@" - "];
+        internalSelections[component] = @(row);
+        [multiArrayPickerField updateTextFromSelections];
     };
 }
 
@@ -66,7 +64,7 @@
     
     self.selectBlock = [[self class] rhb_defaultSelectBlock];
     self.viewBlock = [[self class] rhb_defaultViewBlock];
-    [self rhb_addRightFlipView:[[self class] rhb_arrowLabel]];
+    [self rhb_addRightFlipView:[UILabel rhb_arrowDown]];
 }
 
 
