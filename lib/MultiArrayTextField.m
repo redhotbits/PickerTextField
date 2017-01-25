@@ -28,13 +28,11 @@
 
 -(void)updateTextFromSelections {
     
-    NSArray<NSNumber *> *selections = self.selections;
-    NSArray<NSArray *> *data = self.data;
-    NSMutableArray<NSString *> *strings = [NSMutableArray arrayWithCapacity:selections.count];
-    for(NSInteger i=0;i<selections.count;i++) {
+    NSMutableArray<NSString *> *strings = [NSMutableArray arrayWithCapacity:_selections.count];
+    for(NSInteger i=0;i<_selections.count;i++) {
         
-        NSInteger selectedIndex = selections[i].integerValue;
-        NSString *string = data[i][selectedIndex];
+        NSInteger selectedIndex = _selections[i].integerValue;
+        NSString *string = _data[i][selectedIndex];
         [strings addObject:string];
     }
     self.text = [strings componentsJoinedByString:@" - "];
