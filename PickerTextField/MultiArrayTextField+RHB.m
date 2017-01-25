@@ -9,6 +9,7 @@
 #import "MultiArrayTextField+RHB.h"
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
 #import "UILabel+RHB.h"
+#import "UIView+RHB.h"
 #import <BlocksKit/BlocksKit.h>
 
 
@@ -16,8 +17,7 @@
 
 -(void)rhb_addRightFlipView:(UIView *)view {
     
-    CGFloat height = self.frame.size.height;
-    view.frame = (CGRect){CGPointZero, CGSizeMake(height, height)};
+    view.frame = (CGRect){CGPointZero, self.rhb_squareHeightSize};
     self.rightViewMode = UITextFieldViewModeAlways;
     self.rightView = view;
 }

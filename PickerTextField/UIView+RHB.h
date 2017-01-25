@@ -13,4 +13,6 @@
 
 -(void)rhb_animateVerticalFlipUp:(BOOL)isFlipUp;
 
+@property (nonatomic, readonly) CGSize rhb_squareHeightSize;
+
 @end

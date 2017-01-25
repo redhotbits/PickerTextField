@@ -20,4 +20,10 @@
     } completion:nil];
 }
 
+-(CGSize)rhb_squareHeightSize {
+    
+    CGFloat h = self.frame.size.height;
+    return CGSizeMake(h, h);
+}
+
 @end
