@@ -8,7 +8,7 @@
 
 #import "MultiArrayTextField.h"
 #import "MultiArrayPickerView.h"
-#import "FlipRightViewTextFieldDelegate.h"
+#import "MultiArrayTextFieldDelegate.h"
 
 
 @interface MultiArrayTextField()
@@ -20,26 +20,8 @@
 
 @implementation MultiArrayTextField
 
-#define INDICATOR_ARROW_CHARACTER @"▼";
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        [self setup];
-    }
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    if (self){
-        [self setup];
-    }
-    return self;
-}
-
 - (void)setData:(NSArray *)data {
+    
     NSLog(@"Setting Data to:%@", data);
     
     _data = data;
@@ -51,13 +33,7 @@
     }];
     [self setSelectedTextInPickerView:pickerView];
     self.inputView = pickerView;
-}
-
-- (void)setup{
-    self.delegate = [FlipRightViewTextFieldDelegate sharedInstance];
-    self.textAlignment = NSTextAlignmentCenter;
-    self.tintColor = [UIColor clearColor];
-    [self addArrowIndicator];
+    self.delegate = [MultiArrayTextFieldDelegate sharedInstance];
 }
 
 -(UITapGestureRecognizer *)dismissTapRecognizer {
@@ -81,19 +57,12 @@
     [self resignFirstResponder];
 }
 
-- (void)addArrowIndicator{
-    self.arrowLabel = [[UILabel alloc] init];
-    self.arrowLabel.text = INDICATOR_ARROW_CHARACTER;
-    self.arrowLabel.textAlignment = NSTextAlignmentCenter;
-    [self.arrowLabel sizeToFit];
+-(void)addRightFlipView:(UIView *)view {
     
-    CGRect arrowFrame = self.arrowLabel.frame;
-    arrowFrame.size.width = arrowFrame.size.width + (self.arrowLabel.layoutMargins.left + self.arrowLabel.layoutMargins.right);
-    self.arrowLabel.frame = arrowFrame;
-    
-    
+    CGFloat height = self.frame.size.height;
+    view.frame = (CGRect){CGPointZero, CGSizeMake(height, height)};
     self.rightViewMode = UITextFieldViewModeAlways;
-    self.rightView = self.arrowLabel;
+    self.rightView = view;
 }
 
 - (void)setSelectedTextInPickerView:(UIPickerView *) pickerView {
@@ -107,22 +76,9 @@
     self.text = [selected componentsJoinedByString:@" - "];
 }
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    return NO;
-}
-
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender
 {
     return NO;
 }
-
-- (CGRect)textRectForBounds:(CGRect)bounds {
-    return CGRectInset(bounds, self.arrowLabel.frame.size.width, 0);
-}
-
-- (CGRect)editingRectForBounds:(CGRect)bounds {
-    return CGRectInset(bounds, self.arrowLabel.frame.size.width, 0);
-}
-
 
 @end

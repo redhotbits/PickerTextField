@@ -10,7 +10,7 @@
 
 @implementation UIView(RHB)
 
--(void)rhb_animateFlipUp:(BOOL)isFlipUp {
+-(void)rhb_animateVerticalFlipUp:(BOOL)isFlipUp {
     
     UIViewAnimationOptions options = isFlipUp ? UIViewAnimationOptionTransitionCurlDown : UIViewAnimationOptionTransitionCurlUp;
     CGAffineTransform transform = isFlipUp ? CGAffineTransformIdentity : CGAffineTransformMakeScale(1, -1);

@@ -11,6 +11,6 @@
 
 @interface UIView(RHB)
 
--(void)rhb_animateFlipUp:(BOOL)isFlipUp;
+-(void)rhb_animateVerticalFlipUp:(BOOL)isFlipUp;
 
 @end

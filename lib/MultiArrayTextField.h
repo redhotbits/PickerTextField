@@ -12,8 +12,9 @@
 
 @interface MultiArrayTextField : TextFieldWithBlocks
 
-@property (nonatomic) UILabel *arrowLabel;
-
 @property (nonatomic) NSArray<NSArray *> *data;
 
+-(void)addRightFlipView:(UIView *)view;
+
 @end
+

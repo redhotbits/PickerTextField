@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4BE1C92CAC9A729AA767AEF8 /* Pods_PickerTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */; };
+		A82022291E3829180079DEDF /* MultiArrayTextField+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */; };
 		A826C6B61E34E81C0080D787 /* MultiArrayPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */; };
 		A878E94E1E378D220058B451 /* TextFieldWithBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A878E94D1E378D220058B451 /* TextFieldWithBlocks.m */; };
 		A878E9511E379E100058B451 /* UIView+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A878E9501E379E100058B451 /* UIView+RHB.m */; };
 		A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */; };
-		A8977DE31E3517E6008AFE71 /* FlipRightViewTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DE21E3517E6008AFE71 /* FlipRightViewTextFieldDelegate.m */; };
+		A8977DE31E3517E6008AFE71 /* MultiArrayTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DE21E3517E6008AFE71 /* MultiArrayTextFieldDelegate.m */; };
 		AC7A2A921E33261800FE3E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A911E33261800FE3E73 /* main.m */; };
 		AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A941E33261800FE3E73 /* AppDelegate.m */; };
 		AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A971E33261800FE3E73 /* ViewController.m */; };
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		4C87EDABB993D3D082B28C17 /* Pods-PickerTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickerTextField/Pods-PickerTextField.release.xcconfig"; sourceTree = "<group>"; };
 		8B73ACFC2F4D56DAD93158D5 /* Pods-PickerTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickerTextField/Pods-PickerTextField.debug.xcconfig"; sourceTree = "<group>"; };
+		A82022271E3829180079DEDF /* MultiArrayTextField+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MultiArrayTextField+RHB.h"; sourceTree = "<group>"; };
+		A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MultiArrayTextField+RHB.m"; sourceTree = "<group>"; };
 		A826C6B41E34E81C0080D787 /* MultiArrayPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayPickerView.h; sourceTree = "<group>"; };
 		A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiArrayPickerView.m; sourceTree = "<group>"; };
 		A878E94C1E378D220058B451 /* TextFieldWithBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldWithBlocks.h; sourceTree = "<group>"; };
@@ -33,8 +36,8 @@
 		A878E9501E379E100058B451 /* UIView+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RHB.m"; sourceTree = "<group>"; };
 		A8977DDE1E3511D9008AFE71 /* MultiArrayPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayPickerDelegate.h; sourceTree = "<group>"; };
 		A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiArrayPickerDelegate.m; sourceTree = "<group>"; };
-		A8977DE11E3517E6008AFE71 /* FlipRightViewTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipRightViewTextFieldDelegate.h; sourceTree = "<group>"; };
-		A8977DE21E3517E6008AFE71 /* FlipRightViewTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipRightViewTextFieldDelegate.m; sourceTree = "<group>"; };
+		A8977DE11E3517E6008AFE71 /* MultiArrayTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayTextFieldDelegate.h; sourceTree = "<group>"; };
+		A8977DE21E3517E6008AFE71 /* MultiArrayTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiArrayTextFieldDelegate.m; sourceTree = "<group>"; };
 		AC7A2A8D1E33261800FE3E73 /* PickerTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7A2A911E33261800FE3E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC7A2A931E33261800FE3E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,12 +134,14 @@
 				A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */,
 				A8977DDE1E3511D9008AFE71 /* MultiArrayPickerDelegate.h */,
 				A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */,
-				A8977DE11E3517E6008AFE71 /* FlipRightViewTextFieldDelegate.h */,
-				A8977DE21E3517E6008AFE71 /* FlipRightViewTextFieldDelegate.m */,
+				A8977DE11E3517E6008AFE71 /* MultiArrayTextFieldDelegate.h */,
+				A8977DE21E3517E6008AFE71 /* MultiArrayTextFieldDelegate.m */,
 				A878E94C1E378D220058B451 /* TextFieldWithBlocks.h */,
 				A878E94D1E378D220058B451 /* TextFieldWithBlocks.m */,
 				A878E94F1E379E100058B451 /* UIView+RHB.h */,
 				A878E9501E379E100058B451 /* UIView+RHB.m */,
+				A82022271E3829180079DEDF /* MultiArrayTextField+RHB.h */,
+				A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */,
 			);
 			name = PickerTextField;
 			sourceTree = "<group>";
@@ -264,7 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8977DE31E3517E6008AFE71 /* FlipRightViewTextFieldDelegate.m in Sources */,
+				A82022291E3829180079DEDF /* MultiArrayTextField+RHB.m in Sources */,
+				A8977DE31E3517E6008AFE71 /* MultiArrayTextFieldDelegate.m in Sources */,
 				AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */,
 				A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */,
 				A878E94E1E378D220058B451 /* TextFieldWithBlocks.m in Sources */,

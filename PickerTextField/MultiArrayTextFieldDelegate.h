@@ -1,6 +1,6 @@
 //
-//  FlipRightViewTextFieldDelegate.h
-//  MultiArrayTextField
+//  MultiArrayTextFieldDelegate.h
+//  MultiArrayTextFieldDelegate
 //
 //  Created by Lazar Otasevic on 1/22/17.
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
@@ -10,7 +10,7 @@
 #import <RHBSnippetsObjC/RHBSnippets.h>
 
 
-@interface FlipRightViewTextFieldDelegate : NSObject <UITextFieldDelegate>
+@interface MultiArrayTextFieldDelegate : NSObject <UITextFieldDelegate>
 
 RHB_SINGLETON_DECLARATION();
 
