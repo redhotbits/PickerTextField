@@ -10,7 +10,7 @@
 #import "MultiArrayPickerView.h"
 #import "MultiArrayTextFieldDelegate.h"
 #import <BlocksKit/BlocksKit.h>
-#import "RHBTapGestureRecognizer.h"
+#import "UIView+RHB.h"
 
 
 @implementation MultiArrayTextField
@@ -62,15 +62,7 @@
 - (BOOL)becomeFirstResponder {
     
     self.inputView = [self makeInputView];
-    RHBTapGestureRecognizer *tap = [RHBTapGestureRecognizer new];
-    __weak UIView *view = UIApplication.sharedApplication.keyWindow.subviews.firstObject;
-    __weak typeof(self) weakSelf = self;
-    tap.actionBlock = ^(RHBTapGestureRecognizer *recognizer){
-        
-        [weakSelf resignFirstResponder];
-        [view removeGestureRecognizer:recognizer];
-    };
-    [view addGestureRecognizer:tap];
+    [self rhb_addAutomaticResignRecognizer];
     return [super becomeFirstResponder];
 }
 

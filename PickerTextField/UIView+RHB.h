@@ -15,4 +15,6 @@
 
 @property (nonatomic, readonly) CGSize rhb_squareHeightSize;
 
+-(void)rhb_addAutomaticResignRecognizer;
+
 @end

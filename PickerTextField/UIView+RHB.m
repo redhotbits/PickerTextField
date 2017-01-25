@@ -7,6 +7,8 @@
 //
 
 #import "UIView+RHB.h"
+#import "RHBTapGestureRecognizer.h"
+
 
 @implementation UIView(RHB)
 
@@ -25,5 +27,19 @@
     CGFloat h = self.frame.size.height;
     return CGSizeMake(h, h);
 }
+
+-(void)rhb_addAutomaticResignRecognizer {
+    
+    RHBTapGestureRecognizer *tap = [RHBTapGestureRecognizer new];
+    __weak UIView *view = UIApplication.sharedApplication.keyWindow.subviews.firstObject;
+    __weak typeof(self) weakSelf = self;
+    tap.actionBlock = ^(RHBTapGestureRecognizer *recognizer){
+        
+        [weakSelf resignFirstResponder];
+        [view removeGestureRecognizer:recognizer];
+    };
+    [view addGestureRecognizer:tap];
+}
+
 
 @end
