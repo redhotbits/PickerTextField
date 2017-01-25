@@ -8,7 +8,7 @@
 
 #import "MultiArrayTextField.h"
 #import "MultiArrayPickerView.h"
-#import "MultiArrayTextFieldDelegate.h"
+#import "RHBTextFieldDelegate.h"
 #import <BlocksKit/BlocksKit.h>
 #import "UIView+RHB.h"
 

@@ -1,16 +1,16 @@
 //
-//  MultiArrayTextFieldDelegate.m
-//  MultiArrayTextFieldDelegate
+//  RHBTextFieldDelegate.m
+//  RHBTextFieldDelegate
 //
 //  Created by Lazar Otasevic on 1/22/17.
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
 //
 
-#import "MultiArrayTextFieldDelegate.h"
+#import "RHBTextFieldDelegate.h"
 #import "UIView+RHB.h"
 
 
-@implementation MultiArrayTextFieldDelegate
+@implementation RHBTextFieldDelegate
 
 RHB_SINGLETON_IMPLEMENTATION();
 

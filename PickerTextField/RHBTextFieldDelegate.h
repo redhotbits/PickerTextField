@@ -1,6 +1,6 @@
 //
-//  MultiArrayTextFieldDelegate.h
-//  MultiArrayTextFieldDelegate
+//  RHBTextFieldDelegate.h
+//  RHBTextFieldDelegate
 //
 //  Created by Lazar Otasevic on 1/22/17.
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
@@ -10,7 +10,7 @@
 #import <RHBSnippetsObjC/RHBSnippets.h>
 
 
-@interface MultiArrayTextFieldDelegate : NSObject <UITextFieldDelegate>
+@interface RHBTextFieldDelegate : NSObject <UITextFieldDelegate>
 
 RHB_SINGLETON_DECLARATION();
 
