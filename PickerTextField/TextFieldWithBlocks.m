@@ -8,6 +8,7 @@
 
 #import "TextFieldWithBlocks.h"
 
+
 @implementation TextFieldWithBlocks
 
 -(void)setEnabled:(BOOL)enabled {
@@ -16,7 +17,6 @@
         
         self.enableBlock(self, enabled);
     }
-    
     [super setEnabled:enabled];
 }
 

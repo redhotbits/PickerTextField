@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface TextFieldWithBlocks : UITextField
 
 typedef void(^FlagBlock)(TextFieldWithBlocks *field, BOOL flag);
