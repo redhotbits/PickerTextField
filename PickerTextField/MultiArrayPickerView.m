@@ -21,9 +21,4 @@
     
 }
 
--(void)dealloc {
-    
-    NSLog(@"dealloc in %@", [self class]);
-}
-
 @end
