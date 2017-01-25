@@ -15,6 +15,7 @@
     
     UILabel *arrow = [UILabel new];
     arrow.text = @"▼";
+    arrow.textAlignment = NSTextAlignmentCenter;
     [self addRightFlipView:arrow];
 }
 
