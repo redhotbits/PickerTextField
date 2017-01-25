@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TextFieldWithBlocks.h"
+
+typedef void(^SelectBlock)(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component);
+typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView);
 
 
-@interface MultiArrayTextField : TextFieldWithBlocks
+@interface MultiArrayTextField : UITextField
 
 @property (nonatomic) NSArray<NSArray *> *data;
-
--(void)addRightFlipView:(UIView *)view;
+@property (nonatomic) SelectBlock selectBlock;
+@property (nonatomic) ViewBlock viewBlock;
 
 @end
 

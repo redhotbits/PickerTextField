@@ -9,6 +9,7 @@
 #import "MultiArrayPickerDelegate.h"
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
 #import "MultiArrayPickerView.h"
+#import "MultiArrayTextField.h"
 
 
 @implementation MultiArrayPickerDelegate
@@ -20,19 +21,19 @@ RHB_SINGLETON_IMPLEMENTATION();
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     
     MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
-    return casted.data.count;
+    return casted.multiArrayTextField.data.count;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     
     MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
-    return casted.data[component].count;
+    return casted.multiArrayTextField.data[component].count;
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     
     MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
-    return casted.data[component][row];
+    return casted.multiArrayTextField.data[component][row];
 }
 
 #pragma mark - picker view delegate
@@ -40,23 +41,13 @@ RHB_SINGLETON_IMPLEMENTATION();
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
     MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
-    casted.selectionHandler(casted);
+    casted.multiArrayTextField.selectBlock(casted.multiArrayTextField, casted, row, component);
 }
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
     
-    UILabel *retval = [UILabel rhb_verifyCast:view];
-    if (!retval) {
-        
-        retval = [UILabel new];
-    }
-    
-    retval.text = [self pickerView:pickerView titleForRow:row forComponent:component];
     MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
-    retval.font = casted.dataFont;
-    retval.textAlignment = NSTextAlignmentCenter;
-    
-    return retval;
+    return casted.multiArrayTextField.viewBlock(casted.multiArrayTextField, pickerView, row, component, view);
 }
 
 @end

@@ -7,16 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MultiArrayTextField;
 
 
 @interface MultiArrayPickerView : UIPickerView
 
-typedef void(^SelectionHandlerType)(MultiArrayPickerView *pickerView);
-
-@property (nonatomic, readonly) NSArray<NSArray *> *data;
-@property (nonatomic, readonly) UIFont *dataFont;
-@property (nonatomic, readonly) SelectionHandlerType selectionHandler;
-
--(void)registerDelegatesWithData:(NSArray<NSArray *> *)data dataFont:(UIFont *)dataFont selectionHandler:(SelectionHandlerType)selectionHandler;
+@property (nonatomic, readonly) MultiArrayTextField *multiArrayTextField;
+-(void)registerWithMultiArrayTextField:(MultiArrayTextField *)multiArrayTextField;
 
 @end

@@ -12,11 +12,9 @@
 
 @implementation MultiArrayPickerView
 
--(void)registerDelegatesWithData:(NSArray<NSArray *> *)data dataFont:(UIFont *)dataFont selectionHandler:(SelectionHandlerType)selectionHandler {
+-(void)registerWithMultiArrayTextField:(MultiArrayTextField *)multiArrayTextField {
 
-    _data = data;
-    _dataFont = dataFont;
-    _selectionHandler = selectionHandler;
+    _multiArrayTextField = multiArrayTextField;
     
     self.dataSource = [MultiArrayPickerDelegate sharedInstance];
     self.delegate = [MultiArrayPickerDelegate sharedInstance];
