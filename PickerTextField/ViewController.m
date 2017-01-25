@@ -16,13 +16,11 @@
     [super viewDidLoad];
     
 //    self.picker.data = @[@[@"test",@"test2",@"test3",@"test4",@"test5",@"test6",@"test7",@"test8",@"test9"]];
-    self.picker.data = @[@[@"test",@"test2"],@[@"test3",@"test4"]];
-    self.picker2.data = @[@[@"1", @"2"],@[@"3", @"4"], @[@"1", @"2", @"3", @"4"]];
-    self.picker.selections = @[@1,@1];
+    [self.picker rhb_setupForViewingWithData:@[@[@"test",@"test2"],@[@"test3",@"test4"]] selections:@[@1, @1]];
+    [self.picker2 rhb_setupForViewingWithData:@[@[@"1", @"2"],@[@"3", @"4"], @[@"1", @"2", @"3", @"4"]] selections:nil];
+    
     [self.picker rhb_setupMirkoStyle];
     [self.picker2 rhb_setupMirkoStyle];
-    [self.picker updateTextFromSelections];
-    [self.picker2 updateTextFromSelections];
 }
 
 @end

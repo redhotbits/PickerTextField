@@ -48,5 +48,12 @@
     [self rhb_addRightFlipView:label];
 }
 
+-(void)rhb_setupForViewingWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections {
+    
+    self.selections = selections;
+    self.data = data;
+    [self updateTextFromSelections];
+}
+
 
 @end
