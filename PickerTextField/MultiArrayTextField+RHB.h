@@ -12,8 +12,7 @@
 @interface MultiArrayTextField(RHB)
 
 -(void)rhb_addRightFlipView:(UIView *)view;
-+(ViewBlock)rhb_defaultViewBlock;
-
++(ViewBlock)rhb_labelViewBlock;
 -(void)rhb_setupMirkoStyle;
 
 @end

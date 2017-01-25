@@ -22,7 +22,7 @@
     self.rightView = view;
 }
 
-+(ViewBlock)rhb_defaultViewBlock {
++(ViewBlock)rhb_labelViewBlock {
     
     return ^UIView*(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView) {
         
@@ -33,7 +33,7 @@
         }
         
         retval.text = [pickerView.delegate pickerView:pickerView titleForRow:row forComponent:component];
-        retval.textAlignment = NSTextAlignmentCenter;
+        retval.font = field.font;
         
         return retval;
     };
@@ -41,7 +41,14 @@
 
 -(void)rhb_setupMirkoStyle {
     
-    self.viewBlock = [[self class] rhb_defaultViewBlock];
+    ViewBlock defaultBlock = [[self class] rhb_labelViewBlock];
+    self.viewBlock = ^UIView*(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView) {
+        
+        UIView *view = defaultBlock(field, pickerView, row, component, reuseView);
+        UILabel *label = [UILabel rhb_verifyCast:view];
+        label.textAlignment = NSTextAlignmentCenter;
+        return label;
+    };
     [self rhb_addRightFlipView:[UILabel rhb_arrowDown]];
 }
 
