@@ -21,6 +21,8 @@
     self.picker.selections = @[@1,@1];
     [self.picker rhb_setupMirkoStyle];
     [self.picker2 rhb_setupMirkoStyle];
+    [self.picker updateTextFromSelections];
+    [self.picker2 updateTextFromSelections];
 }
 
 @end

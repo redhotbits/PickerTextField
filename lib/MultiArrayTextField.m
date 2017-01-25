@@ -21,6 +21,16 @@
 
 @implementation MultiArrayTextField
 
+-(void)setData:(NSArray<NSArray *> *)data {
+    
+    _data = data;
+    if (_selections.count != data.count) {
+        
+        _selections = [data bk_map:^id(id obj) {
+            return @(0);
+        }];
+    }
+}
 
 -(void)updateTextFromSelections {
     

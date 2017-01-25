@@ -133,6 +133,8 @@
 			children = (
 				AC7A2AAA1E33264A00FE3E73 /* MultiArrayTextField.h */,
 				AC7A2AAB1E33264A00FE3E73 /* MultiArrayTextField.m */,
+				A82022271E3829180079DEDF /* MultiArrayTextField+RHB.h */,
+				A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */,
 				A826C6B41E34E81C0080D787 /* MultiArrayPickerView.h */,
 				A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */,
 				A8977DDE1E3511D9008AFE71 /* MultiArrayPickerDelegate.h */,
@@ -143,8 +145,6 @@
 				A878E94D1E378D220058B451 /* TextFieldWithBlocks.m */,
 				A878E94F1E379E100058B451 /* UIView+RHB.h */,
 				A878E9501E379E100058B451 /* UIView+RHB.m */,
-				A82022271E3829180079DEDF /* MultiArrayTextField+RHB.h */,
-				A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */,
 				A8296EFC1E38F3BA00D13EDA /* UILabel+RHB.h */,
 				A8296EFD1E38F3BA00D13EDA /* UILabel+RHB.m */,
 			);
