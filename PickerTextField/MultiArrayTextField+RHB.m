@@ -10,11 +10,7 @@
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
 #import "UILabel+RHB.h"
 #import <BlocksKit/BlocksKit.h>
-#import "RHBTextFieldWithPickerProtocol.h"
 
-
-@interface MultiArrayTextField()<RHBTextFieldWithPickerProtocol>
-@end
 
 @implementation MultiArrayTextField(RHB)
 
@@ -37,7 +33,6 @@
         }
         
         retval.text = [pickerView.delegate pickerView:pickerView titleForRow:row forComponent:component];
-        retval.font = [UIFont systemFontOfSize:16];
         retval.textAlignment = NSTextAlignmentCenter;
         
         return retval;

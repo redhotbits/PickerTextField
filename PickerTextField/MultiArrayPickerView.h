@@ -12,7 +12,6 @@
 
 @interface MultiArrayPickerView : UIPickerView
 
-@property (nonatomic, readonly) MultiArrayTextField *multiArrayTextField;
--(void)registerWithMultiArrayTextField:(MultiArrayTextField *)multiArrayTextField;
+@property (nonatomic) MultiArrayTextField *multiArrayTextField;
 
 @end

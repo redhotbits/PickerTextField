@@ -10,11 +10,7 @@
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
 #import "MultiArrayPickerView.h"
 #import "MultiArrayTextField.h"
-#import "RHBTextFieldWithPickerProtocol.h"
 
-
-@interface MultiArrayTextField()<RHBTextFieldWithPickerProtocol>
-@end
 
 @implementation MultiArrayPickerDelegate
 
@@ -45,13 +41,14 @@ RHB_SINGLETON_IMPLEMENTATION();
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
     MultiArrayPickerView *casted = [MultiArrayPickerView rhb_verifyCast:pickerView];
-    MultiArrayTextField *multiArrayPickerField = casted.multiArrayTextField;
-    NSMutableArray<NSNumber *> *internalSelections = [multiArrayPickerField internalSelections];
-    NSNumber *oldrow = internalSelections[component];
-    if (oldrow.integerValue != row) {
+    MultiArrayTextField *field = casted.multiArrayTextField;
+    NSArray<NSNumber *> *selections = field.selections;
+    if (selections[component].integerValue != row) {
         
-        internalSelections[component] = @(row);
-        [multiArrayPickerField updateTextFromSelections];
+        NSMutableArray<NSNumber *> *mutableSelections = selections.mutableCopy;
+        mutableSelections[component] = @(row);
+        field.selections = mutableSelections;
+        [field updateTextFromSelections];
     }
 }
 

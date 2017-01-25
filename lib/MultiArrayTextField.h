@@ -13,8 +13,9 @@ typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInte
 
 @interface MultiArrayTextField : UITextField
 
-@property (nonatomic) NSArray<NSArray *> *data;
 @property (nonatomic) ViewBlock viewBlock;
+
+@property (nonatomic) NSArray<NSArray *> *data;
 @property (nonatomic) NSArray<NSNumber *> *selections;
 
 -(void)updateTextFromSelections;

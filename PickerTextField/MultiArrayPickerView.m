@@ -12,12 +12,18 @@
 
 @implementation MultiArrayPickerView
 
--(void)registerWithMultiArrayTextField:(MultiArrayTextField *)multiArrayTextField {
+-(void)setMultiArrayTextField:(MultiArrayTextField *)multiArrayTextField {
 
     _multiArrayTextField = multiArrayTextField;
     
     self.dataSource = [MultiArrayPickerDelegate sharedInstance];
     self.delegate = [MultiArrayPickerDelegate sharedInstance];
+    
+}
+
+-(void)dealloc {
+    
+    NSLog(@"dealloc in %@", [self class]);
 }
 
 @end

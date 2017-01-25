@@ -10,72 +10,44 @@
 #import "MultiArrayPickerView.h"
 #import "MultiArrayTextFieldDelegate.h"
 #import <BlocksKit/BlocksKit.h>
-#import "RHBTextFieldWithPickerProtocol.h"
 
 
-@interface MultiArrayTextField()<RHBTextFieldWithPickerProtocol>
+@interface MultiArrayTextField()
 
 @property (nonatomic) UITapGestureRecognizer *dismissTapRecognizer;
-@property (nonatomic) MultiArrayPickerView *multiArrayPickerView;
-@property (nonatomic) NSMutableArray<NSNumber *> *internalSelections;
 
 @end
 
 
 @implementation MultiArrayTextField
 
--(NSArray<NSNumber *> *)selections {
-    
-    return _internalSelections;
-}
-
--(void)setSelections:(NSArray<NSNumber *> *)selections {
-    
-    NSAssert(self.data, @"first set data");
-    NSAssert(self.data.count == selections.count, @"need proper selections");
-    _internalSelections = selections.mutableCopy;
-    [selections enumerateObjectsUsingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        [self.multiArrayPickerView selectRow:obj.integerValue inComponent:idx animated:NO];
-    }];
-    [self updateTextFromSelections];
-}
 
 -(void)updateTextFromSelections {
     
     NSArray<NSNumber *> *selections = self.selections;
+    NSArray<NSArray *> *data = self.data;
     NSMutableArray<NSString *> *strings = [NSMutableArray arrayWithCapacity:selections.count];
     for(NSInteger i=0;i<selections.count;i++) {
         
         NSInteger selectedIndex = selections[i].integerValue;
-        NSString *string = self.data[i][selectedIndex];
+        NSString *string = data[i][selectedIndex];
         [strings addObject:string];
     }
     self.text = [strings componentsJoinedByString:@" - "];
 }
 
--(MultiArrayPickerView *)multiArrayPickerView {
+-(UIView *)inputView {
     
-    if (!_multiArrayPickerView) {
-        
-        _multiArrayPickerView = [MultiArrayPickerView new];
-        [_multiArrayPickerView registerWithMultiArrayTextField:self];
-        self.inputView = _multiArrayPickerView;
-        self.delegate = [MultiArrayTextFieldDelegate sharedInstance];
-    }
-    return _multiArrayPickerView;
-}
+    MultiArrayPickerView *multiArrayPickerView = [MultiArrayPickerView new];
+    multiArrayPickerView.multiArrayTextField = self;
+    self.delegate = [MultiArrayTextFieldDelegate sharedInstance];
 
-- (void)setData:(NSArray<NSArray *> *)data {
+    [_selections enumerateObjectsUsingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+       
+        [multiArrayPickerView selectRow:obj.integerValue inComponent:idx animated:NO];
+    }];
     
-    NSLog(@"Setting Data to:%@", data);
-    
-    _data = data;
-    [self.multiArrayPickerView reloadAllComponents];
-    _internalSelections = [data bk_map:^id(id obj) {
-        return @(0);
-    }].mutableCopy;
-    [self updateTextFromSelections];
+    return multiArrayPickerView;
 }
 
 -(UITapGestureRecognizer *)dismissTapRecognizer {
