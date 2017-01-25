@@ -26,22 +26,6 @@
     self.rightView = view;
 }
 
-+(SelectBlock)rhb_defaultSelectBlock {
-
-    return ^(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component) {
-        
-        MultiArrayTextField *multiArrayPickerField = [MultiArrayTextField rhb_verifyCast:field];
-        NSMutableArray<NSNumber *> *internalSelections = [multiArrayPickerField internalSelections];
-        NSNumber *oldrow = internalSelections[component];
-        if (oldrow.integerValue == row) {
-            
-            return;
-        }
-        internalSelections[component] = @(row);
-        [multiArrayPickerField updateTextFromSelections];
-    };
-}
-
 +(ViewBlock)rhb_defaultViewBlock {
     
     return ^UIView*(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView) {
@@ -62,7 +46,6 @@
 
 -(void)rhb_setupMirkoStyle {
     
-    self.selectBlock = [[self class] rhb_defaultSelectBlock];
     self.viewBlock = [[self class] rhb_defaultViewBlock];
     [self rhb_addRightFlipView:[UILabel rhb_arrowDown]];
 }

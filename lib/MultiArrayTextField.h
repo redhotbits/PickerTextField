@@ -8,14 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^SelectBlock)(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component);
 typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView);
 
 
 @interface MultiArrayTextField : UITextField
 
 @property (nonatomic) NSArray<NSArray *> *data;
-@property (nonatomic) SelectBlock selectBlock;
 @property (nonatomic) ViewBlock viewBlock;
 @property (nonatomic) NSArray<NSNumber *> *selections;
 
