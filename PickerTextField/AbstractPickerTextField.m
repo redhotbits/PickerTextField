@@ -24,7 +24,12 @@
 
 - (BOOL)becomeFirstResponder {
     
-    self.inputView = [self makeInputPicker];
+    UIPickerView *pickerView = [self makeInputPicker];
+    [self.selections enumerateObjectsUsingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        [pickerView selectRow:obj.integerValue inComponent:idx animated:NO];
+    }];
+    self.inputView = pickerView;
     [self rhb_addAutomaticResignRecognizer];
     return [super becomeFirstResponder];
 }

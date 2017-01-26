@@ -43,15 +43,7 @@
 
 -(UIPickerView *)makeInputPicker {
     
-    MultiArrayPickerView *multiArrayPickerView = [MultiArrayPickerView new];
-    multiArrayPickerView.multiArrayTextField = self;
-
-    [self.selections enumerateObjectsUsingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-       
-        [multiArrayPickerView selectRow:obj.integerValue inComponent:idx animated:NO];
-    }];
-    
-    return multiArrayPickerView;
+    return [[MultiArrayPickerView alloc] initWithMultiArrayTextField:self];
 }
 
 -(void)defaultSetupForViewingWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections {

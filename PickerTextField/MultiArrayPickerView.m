@@ -14,13 +14,16 @@
 
 @implementation MultiArrayPickerView
 
--(void)setMultiArrayTextField:(MultiArrayTextField *)multiArrayTextField {
+-(instancetype)initWithMultiArrayTextField:(MultiArrayTextField *)multiArrayTextField {
 
-    _multiArrayTextField = multiArrayTextField;
-    
-    self.dataSource = [MultiArrayPickerDelegate sharedInstance];
-    self.delegate = [MultiArrayPickerDelegate sharedInstance];
-    multiArrayTextField.delegate = [RHBTextFieldDelegate sharedInstance];
+    if (self = [super initWithFrame:CGRectZero]) {
+        
+        _multiArrayTextField = multiArrayTextField;
+        self.dataSource = [MultiArrayPickerDelegate sharedInstance];
+        self.delegate = [MultiArrayPickerDelegate sharedInstance];
+        multiArrayTextField.delegate = [RHBTextFieldDelegate sharedInstance];
+    }
+    return self;
 }
 
 @end
