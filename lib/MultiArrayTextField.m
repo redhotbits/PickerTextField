@@ -12,7 +12,7 @@
 #import "MultiArrayTextField+RHB.h"
 
 
-@interface MultiArrayTextField()<AbstractPickerTextFieldPrivate>
+@interface MultiArrayTextField()<PTFAbstractTextFieldPrivate>
 @end
 
 

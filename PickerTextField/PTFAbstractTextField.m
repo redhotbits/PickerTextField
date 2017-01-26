@@ -1,19 +1,19 @@
 //
-//  AbstractPickerTextField.m
+//  PTFAbstractTextField.m
 //  PickerTextField
 //
 //  Created by Lazar Otasevic on 1/26/17.
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
 //
 
-#import "AbstractPickerTextField.h"
+#import "PTFAbstractTextField.h"
 
 
-@interface AbstractPickerTextField()<AbstractPickerTextFieldPrivate>
+@interface PTFAbstractTextField()<PTFAbstractTextFieldPrivate>
 @end
 
 
-@implementation AbstractPickerTextField
+@implementation PTFAbstractTextField
 
 -(BOOL)resignFirstResponder {
     

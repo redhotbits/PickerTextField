@@ -44,7 +44,7 @@ RHB_SINGLETON_IMPLEMENTATION();
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
     RHBTextFieldPickerView *castedPicker = [RHBTextFieldPickerView rhb_verifyCast:pickerView];
-    AbstractPickerTextField *castedField = [AbstractPickerTextField rhb_verifyCast:castedPicker.pickerTextField];
+    PTFAbstractTextField *castedField = [PTFAbstractTextField rhb_verifyCast:castedPicker.pickerTextField];
     NSArray<NSNumber *> *selections = castedField.selections;
     if (selections[component].integerValue != row) {
         
@@ -58,7 +58,7 @@ RHB_SINGLETON_IMPLEMENTATION();
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
     
     RHBTextFieldPickerView *castedPicker = [RHBTextFieldPickerView rhb_verifyCast:pickerView];
-    AbstractPickerTextField *castedField = [AbstractPickerTextField rhb_verifyCast:castedPicker.pickerTextField];
+    PTFAbstractTextField *castedField = [PTFAbstractTextField rhb_verifyCast:castedPicker.pickerTextField];
     return castedField.viewBlock(castedField, pickerView, row, component, view);
 }
 

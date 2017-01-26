@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class AbstractPickerTextField;
+@class PTFAbstractTextField;
 @class MultiArrayTextField;
 
 
@@ -18,6 +18,6 @@
 -(instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
 -(instancetype)initWithMultiArrayTextField:(MultiArrayTextField *)multiArrayTextField NS_DESIGNATED_INITIALIZER;
 
-@property (nonatomic, readonly, weak) AbstractPickerTextField *pickerTextField;
+@property (nonatomic, readonly, weak) PTFAbstractTextField *pickerTextField;
 
 @end

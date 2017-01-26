@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AbstractPickerTextField.h"
+#import "PTFAbstractTextField.h"
 
 
-@interface MultiArrayTextField : AbstractPickerTextField
+@interface MultiArrayTextField : PTFAbstractTextField
 
 @property (nonatomic) NSArray<NSArray *> *data;
 

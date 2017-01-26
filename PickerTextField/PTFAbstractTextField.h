@@ -1,5 +1,5 @@
 //
-//  AbstractPickerTextField.h
+//  PTFAbstractTextField.h
 //  PickerTextField
 //
 //  Created by Lazar Otasevic on 1/26/17.
@@ -12,7 +12,7 @@
 typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView);
 
 
-@protocol AbstractPickerTextFieldPrivate <NSObject>
+@protocol PTFAbstractTextFieldPrivate <NSObject>
 
 // ova dva implementiras
 -(UIPickerView*)makeInputPicker;
@@ -21,7 +21,7 @@ typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInte
 @end
 
 
-@interface AbstractPickerTextField : RHBUITextField
+@interface PTFAbstractTextField : RHBUITextField
 
 @property (nonatomic) ViewBlock viewBlock;
 @property (nonatomic) NSArray<NSNumber *> *selections;
