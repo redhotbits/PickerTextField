@@ -7,18 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TextFieldWithBlocks.h"
+#import "AbstractPickerTextField.h"
 
 
-typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView);
+@interface MultiArrayTextField : AbstractPickerTextField
 
-
-@interface MultiArrayTextField : TextFieldWithBlocks
-
-@property (nonatomic) ViewBlock viewBlock;
 @property (nonatomic) NSArray<NSArray *> *data;
-@property (nonatomic) NSArray<NSNumber *> *selections;
--(void)updateTextFromSelections;
 
 @end
 
