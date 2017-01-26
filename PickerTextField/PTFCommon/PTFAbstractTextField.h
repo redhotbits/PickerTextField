@@ -7,9 +7,7 @@
 //
 
 #import "RHBUITextField.h"
-
-
-typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView);
+#import "PTFViewBlock.h"
 
 
 @protocol PTFAbstractTextFieldPrivate <NSObject>

@@ -15,6 +15,11 @@
 
 @implementation PTFAbstractTextField
 
+-(void)awakeFromNib {
+    
+    
+}
+
 -(BOOL)resignFirstResponder {
     
     self.inputView = nil;

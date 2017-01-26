@@ -12,6 +12,7 @@
 		A88741391E3A409B0040BD18 /* UITextField+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A88741381E3A409B0040BD18 /* UITextField+RHB.m */; };
 		A887413F1E3A60CF0040BD18 /* PTFAbstractTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A887413E1E3A60CF0040BD18 /* PTFAbstractTextField.m */; };
 		A88741421E3A61390040BD18 /* PTFPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A88741411E3A61390040BD18 /* PTFPickerView.m */; };
+		A88741451E3A623C0040BD18 /* PTFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A88741441E3A623C0040BD18 /* PTFUtilities.m */; };
 		A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */; };
 		A8977DE31E3517E6008AFE71 /* RHBTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DE21E3517E6008AFE71 /* RHBTextFieldDelegate.m */; };
 		A8C69A8F1E3A0A9200B7FF51 /* UILabel+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A8C1E3A0A9200B7FF51 /* UILabel+RHB.m */; };
@@ -38,6 +39,9 @@
 		A887413E1E3A60CF0040BD18 /* PTFAbstractTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTFAbstractTextField.m; path = PTFCommon/PTFAbstractTextField.m; sourceTree = "<group>"; };
 		A88741401E3A61390040BD18 /* PTFPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTFPickerView.h; path = PTFCommon/PTFPickerView.h; sourceTree = "<group>"; };
 		A88741411E3A61390040BD18 /* PTFPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTFPickerView.m; path = PTFCommon/PTFPickerView.m; sourceTree = "<group>"; };
+		A88741431E3A623C0040BD18 /* PTFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTFUtilities.h; path = PTFCommon/PTFUtilities.h; sourceTree = "<group>"; };
+		A88741441E3A623C0040BD18 /* PTFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTFUtilities.m; path = PTFCommon/PTFUtilities.m; sourceTree = "<group>"; };
+		A88741461E3A62680040BD18 /* PTFViewBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTFViewBlock.h; path = PTFCommon/PTFViewBlock.h; sourceTree = "<group>"; };
 		A8977DDE1E3511D9008AFE71 /* MultiArrayPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayPickerDelegate.h; sourceTree = "<group>"; };
 		A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiArrayPickerDelegate.m; sourceTree = "<group>"; };
 		A8977DE11E3517E6008AFE71 /* RHBTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBTextFieldDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +118,9 @@
 				A88741411E3A61390040BD18 /* PTFPickerView.m */,
 				A887413D1E3A60CF0040BD18 /* PTFAbstractTextField.h */,
 				A887413E1E3A60CF0040BD18 /* PTFAbstractTextField.m */,
+				A88741431E3A623C0040BD18 /* PTFUtilities.h */,
+				A88741441E3A623C0040BD18 /* PTFUtilities.m */,
+				A88741461E3A62680040BD18 /* PTFViewBlock.h */,
 			);
 			name = PTFCommon;
 			sourceTree = "<group>";
@@ -327,6 +334,7 @@
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
 				AC7A2AAD1E33264A00FE3E73 /* MultiArrayTextField.m in Sources */,
 				A88741391E3A409B0040BD18 /* UITextField+RHB.m in Sources */,
+				A88741451E3A623C0040BD18 /* PTFUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
