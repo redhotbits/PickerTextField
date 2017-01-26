@@ -15,8 +15,8 @@
 		A8977DE31E3517E6008AFE71 /* RHBTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DE21E3517E6008AFE71 /* RHBTextFieldDelegate.m */; };
 		A8C69A8F1E3A0A9200B7FF51 /* UILabel+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A8C1E3A0A9200B7FF51 /* UILabel+RHB.m */; };
 		A8C69A901E3A0A9200B7FF51 /* UIView+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A8E1E3A0A9200B7FF51 /* UIView+RHB.m */; };
-		A8C69A961E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A931E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m */; };
-		A8C69A971E3A0B4E00B7FF51 /* TextFieldWithBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A951E3A0B4E00B7FF51 /* TextFieldWithBlocks.m */; };
+		A8C69A961E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A931E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m */; };
+		A8C69A971E3A0B4E00B7FF51 /* RHBUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A951E3A0B4E00B7FF51 /* RHBUITextField.m */; };
 		AC7A2A921E33261800FE3E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A911E33261800FE3E73 /* main.m */; };
 		AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A941E33261800FE3E73 /* AppDelegate.m */; };
 		AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A971E33261800FE3E73 /* ViewController.m */; };
@@ -43,10 +43,10 @@
 		A8C69A8C1E3A0A9200B7FF51 /* UILabel+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+RHB.m"; path = "UICategories/UILabel+RHB.m"; sourceTree = "<group>"; };
 		A8C69A8D1E3A0A9200B7FF51 /* UIView+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+RHB.h"; path = "UICategories/UIView+RHB.h"; sourceTree = "<group>"; };
 		A8C69A8E1E3A0A9200B7FF51 /* UIView+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHB.m"; path = "UICategories/UIView+RHB.m"; sourceTree = "<group>"; };
-		A8C69A921E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RHBTapGestureRecognizer.h; path = UISubclasses/RHBTapGestureRecognizer.h; sourceTree = "<group>"; };
-		A8C69A931E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RHBTapGestureRecognizer.m; path = UISubclasses/RHBTapGestureRecognizer.m; sourceTree = "<group>"; };
-		A8C69A941E3A0B4E00B7FF51 /* TextFieldWithBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextFieldWithBlocks.h; path = UISubclasses/TextFieldWithBlocks.h; sourceTree = "<group>"; };
-		A8C69A951E3A0B4E00B7FF51 /* TextFieldWithBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextFieldWithBlocks.m; path = UISubclasses/TextFieldWithBlocks.m; sourceTree = "<group>"; };
+		A8C69A921E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RHBUITapGestureRecognizer.h; path = UISubclasses/RHBUITapGestureRecognizer.h; sourceTree = "<group>"; };
+		A8C69A931E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RHBUITapGestureRecognizer.m; path = UISubclasses/RHBUITapGestureRecognizer.m; sourceTree = "<group>"; };
+		A8C69A941E3A0B4E00B7FF51 /* RHBUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RHBUITextField.h; path = UISubclasses/RHBUITextField.h; sourceTree = "<group>"; };
+		A8C69A951E3A0B4E00B7FF51 /* RHBUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RHBUITextField.m; path = UISubclasses/RHBUITextField.m; sourceTree = "<group>"; };
 		AC7A2A8D1E33261800FE3E73 /* PickerTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7A2A911E33261800FE3E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC7A2A931E33261800FE3E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,10 +105,10 @@
 		A8C69A911E3A0AC400B7FF51 /* UISubclasses */ = {
 			isa = PBXGroup;
 			children = (
-				A8C69A921E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.h */,
-				A8C69A931E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m */,
-				A8C69A941E3A0B4E00B7FF51 /* TextFieldWithBlocks.h */,
-				A8C69A951E3A0B4E00B7FF51 /* TextFieldWithBlocks.m */,
+				A8C69A921E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.h */,
+				A8C69A931E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m */,
+				A8C69A941E3A0B4E00B7FF51 /* RHBUITextField.h */,
+				A8C69A951E3A0B4E00B7FF51 /* RHBUITextField.m */,
 			);
 			name = UISubclasses;
 			sourceTree = "<group>";
@@ -304,10 +304,10 @@
 				A8C69A8F1E3A0A9200B7FF51 /* UILabel+RHB.m in Sources */,
 				A8C69A901E3A0A9200B7FF51 /* UIView+RHB.m in Sources */,
 				A8977DE31E3517E6008AFE71 /* RHBTextFieldDelegate.m in Sources */,
-				A8C69A961E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m in Sources */,
+				A8C69A961E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m in Sources */,
 				AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */,
 				A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */,
-				A8C69A971E3A0B4E00B7FF51 /* TextFieldWithBlocks.m in Sources */,
+				A8C69A971E3A0B4E00B7FF51 /* RHBUITextField.m in Sources */,
 				AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */,
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
 				A826C6B61E34E81C0080D787 /* MultiArrayPickerView.m in Sources */,

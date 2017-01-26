@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface RHBTapGestureRecognizer : UITapGestureRecognizer
+@interface RHBUITapGestureRecognizer : UITapGestureRecognizer
 
-typedef void(^ActionBlock)(RHBTapGestureRecognizer *recognizer);
+typedef void(^ActionBlock)(RHBUITapGestureRecognizer *recognizer);
 @property (nonatomic) ActionBlock actionBlock;
 
 -(instancetype)init NS_DESIGNATED_INITIALIZER;

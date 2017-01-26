@@ -6,10 +6,10 @@
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
 //
 
-#import "RHBTapGestureRecognizer.h"
+#import "RHBUITapGestureRecognizer.h"
 
 
-@implementation RHBTapGestureRecognizer
+@implementation RHBUITapGestureRecognizer
 
 -(instancetype)init {
     

@@ -7,7 +7,7 @@
 //
 
 #import "UIView+RHB.h"
-#import "RHBTapGestureRecognizer.h"
+#import "RHBUITapGestureRecognizer.h"
 
 
 @implementation UIView(RHB)
@@ -30,10 +30,10 @@
 
 -(void)rhb_addAutomaticResignRecognizer {
     
-    RHBTapGestureRecognizer *tap = [RHBTapGestureRecognizer new];
+    RHBUITapGestureRecognizer *tap = [RHBUITapGestureRecognizer new];
     __weak UIView *view = UIApplication.sharedApplication.keyWindow.subviews.firstObject;
     __weak typeof(self) weakSelf = self;
-    tap.actionBlock = ^(RHBTapGestureRecognizer *recognizer){
+    tap.actionBlock = ^(RHBUITapGestureRecognizer *recognizer){
         
         [weakSelf resignFirstResponder];
         [view removeGestureRecognizer:recognizer];

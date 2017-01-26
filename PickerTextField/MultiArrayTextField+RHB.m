@@ -46,7 +46,7 @@
     UILabel *label = [UILabel rhb_arrowDown];
     label.font = self.font;
     [self rhb_addRightFlipView:label];
-    self.enableBlock = ^(TextFieldWithBlocks *field, BOOL flag){
+    self.enableBlock = ^(RHBUITextField *field, BOOL flag){
         
         field.alpha = flag ? 1 : (CGFloat)0.5;
     };

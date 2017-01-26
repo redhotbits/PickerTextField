@@ -6,10 +6,10 @@
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
 //
 
-#import "TextFieldWithBlocks.h"
+#import "RHBUITextField.h"
 
 
-@implementation TextFieldWithBlocks
+@implementation RHBUITextField
 
 -(void)setEnabled:(BOOL)enabled {
     

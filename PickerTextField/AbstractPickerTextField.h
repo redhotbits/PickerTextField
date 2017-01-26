@@ -6,7 +6,7 @@
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
 //
 
-#import "TextFieldWithBlocks.h"
+#import "RHBUITextField.h"
 
 
 typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView);
@@ -21,7 +21,7 @@ typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInte
 @end
 
 
-@interface AbstractPickerTextField : TextFieldWithBlocks
+@interface AbstractPickerTextField : RHBUITextField
 
 @property (nonatomic) ViewBlock viewBlock;
 @property (nonatomic) NSArray<NSNumber *> *selections;

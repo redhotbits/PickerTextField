@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 
-@interface TextFieldWithBlocks : UITextField
+@interface RHBUITextField : UITextField
 
-typedef void(^FlagBlock)(TextFieldWithBlocks *field, BOOL flag);
+typedef void(^FlagBlock)(RHBUITextField *field, BOOL flag);
 
 @property (nonatomic) FlagBlock enableBlock;
 
