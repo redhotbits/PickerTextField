@@ -7,7 +7,6 @@
 //
 
 #import "AbstractPickerTextField.h"
-#import "UIView+RHB.h"
 
 
 @interface AbstractPickerTextField()<AbstractPickerTextFieldPrivate>
@@ -30,7 +29,6 @@
         [pickerView selectRow:obj.integerValue inComponent:idx animated:NO];
     }];
     self.inputView = pickerView;
-    [self rhb_addAutomaticResignRecognizer];
     return [super becomeFirstResponder];
 }
 

@@ -1,5 +1,5 @@
 //
-//  MultiArrayPickerView.h
+//  RHBTextFieldPickerView.h
 //  MultiArrayTextField
 //
 //  Created by Lazar Otasevic on 1/22/17.
@@ -11,7 +11,7 @@
 @class MultiArrayTextField;
 
 
-@interface MultiArrayPickerView : UIPickerView
+@interface RHBTextFieldPickerView : UIPickerView
 
 -(instancetype)init NS_UNAVAILABLE;
 -(instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;

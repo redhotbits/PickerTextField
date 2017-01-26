@@ -33,6 +33,7 @@
 
 -(void)dealloc {
     
+    NSLog(@"dealloc in %@", [self class]);
     [self setActionBlock:nil];
 }
 

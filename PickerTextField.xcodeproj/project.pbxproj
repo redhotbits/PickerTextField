@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4BE1C92CAC9A729AA767AEF8 /* Pods_PickerTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */; };
 		A82022291E3829180079DEDF /* MultiArrayTextField+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */; };
-		A826C6B61E34E81C0080D787 /* MultiArrayPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */; };
+		A826C6B61E34E81C0080D787 /* RHBTextFieldPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826C6B51E34E81C0080D787 /* RHBTextFieldPickerView.m */; };
 		A8296F171E3976E900D13EDA /* AbstractPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A8296F161E3976E900D13EDA /* AbstractPickerTextField.m */; };
 		A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */; };
 		A8977DE31E3517E6008AFE71 /* RHBTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DE21E3517E6008AFE71 /* RHBTextFieldDelegate.m */; };
@@ -31,8 +31,8 @@
 		8B73ACFC2F4D56DAD93158D5 /* Pods-PickerTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickerTextField/Pods-PickerTextField.debug.xcconfig"; sourceTree = "<group>"; };
 		A82022271E3829180079DEDF /* MultiArrayTextField+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MultiArrayTextField+RHB.h"; sourceTree = "<group>"; };
 		A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MultiArrayTextField+RHB.m"; sourceTree = "<group>"; };
-		A826C6B41E34E81C0080D787 /* MultiArrayPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayPickerView.h; sourceTree = "<group>"; };
-		A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiArrayPickerView.m; sourceTree = "<group>"; };
+		A826C6B41E34E81C0080D787 /* RHBTextFieldPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBTextFieldPickerView.h; sourceTree = "<group>"; };
+		A826C6B51E34E81C0080D787 /* RHBTextFieldPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHBTextFieldPickerView.m; sourceTree = "<group>"; };
 		A8296F151E3976E900D13EDA /* AbstractPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPickerTextField.h; sourceTree = "<group>"; };
 		A8296F161E3976E900D13EDA /* AbstractPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractPickerTextField.m; sourceTree = "<group>"; };
 		A8977DDE1E3511D9008AFE71 /* MultiArrayPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayPickerDelegate.h; sourceTree = "<group>"; };
@@ -167,8 +167,8 @@
 				AC7A2AAB1E33264A00FE3E73 /* MultiArrayTextField.m */,
 				A82022271E3829180079DEDF /* MultiArrayTextField+RHB.h */,
 				A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */,
-				A826C6B41E34E81C0080D787 /* MultiArrayPickerView.h */,
-				A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */,
+				A826C6B41E34E81C0080D787 /* RHBTextFieldPickerView.h */,
+				A826C6B51E34E81C0080D787 /* RHBTextFieldPickerView.m */,
 				A8977DDE1E3511D9008AFE71 /* MultiArrayPickerDelegate.h */,
 				A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */,
 				A8977DE11E3517E6008AFE71 /* RHBTextFieldDelegate.h */,
@@ -310,7 +310,7 @@
 				A8C69A971E3A0B4E00B7FF51 /* RHBUITextField.m in Sources */,
 				AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */,
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
-				A826C6B61E34E81C0080D787 /* MultiArrayPickerView.m in Sources */,
+				A826C6B61E34E81C0080D787 /* RHBTextFieldPickerView.m in Sources */,
 				AC7A2AAD1E33264A00FE3E73 /* MultiArrayTextField.m in Sources */,
 				A8296F171E3976E900D13EDA /* AbstractPickerTextField.m in Sources */,
 			);
