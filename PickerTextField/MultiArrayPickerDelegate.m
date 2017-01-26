@@ -32,14 +32,14 @@ RHB_SINGLETON_IMPLEMENTATION();
     return castedField.data[component].count;
 }
 
+#pragma mark - picker view delegate
+
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     
     MultiArrayPickerView *castedPicker = [MultiArrayPickerView rhb_verifyCast:pickerView];
     MultiArrayTextField *castedField = [MultiArrayTextField rhb_verifyCast:castedPicker.pickerTextField];
     return castedField.data[component][row];
 }
-
-#pragma mark - picker view delegate
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
