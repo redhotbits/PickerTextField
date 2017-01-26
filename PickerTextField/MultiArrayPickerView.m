@@ -19,9 +19,9 @@
     if (self = [super initWithFrame:CGRectZero]) {
         
         _multiArrayTextField = multiArrayTextField;
+        _multiArrayTextField.delegate = [RHBTextFieldDelegate sharedInstance];
         self.dataSource = [MultiArrayPickerDelegate sharedInstance];
         self.delegate = [MultiArrayPickerDelegate sharedInstance];
-        multiArrayTextField.delegate = [RHBTextFieldDelegate sharedInstance];
     }
     return self;
 }

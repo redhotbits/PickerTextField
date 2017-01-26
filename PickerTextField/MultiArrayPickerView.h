@@ -17,6 +17,6 @@
 -(instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
 -(instancetype)initWithMultiArrayTextField:(MultiArrayTextField *)multiArrayTextField NS_DESIGNATED_INITIALIZER;
 
-@property (nonatomic, readonly) MultiArrayTextField *multiArrayTextField;
+@property (nonatomic, readonly, weak) MultiArrayTextField *multiArrayTextField;
 
 @end

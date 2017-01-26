@@ -10,13 +10,13 @@
 		4BE1C92CAC9A729AA767AEF8 /* Pods_PickerTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */; };
 		A82022291E3829180079DEDF /* MultiArrayTextField+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */; };
 		A826C6B61E34E81C0080D787 /* MultiArrayPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */; };
-		A8296EFE1E38F3BA00D13EDA /* UILabel+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8296EFD1E38F3BA00D13EDA /* UILabel+RHB.m */; };
-		A8296F0A1E39389600D13EDA /* RHBTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A8296F091E39389600D13EDA /* RHBTapGestureRecognizer.m */; };
 		A8296F171E3976E900D13EDA /* AbstractPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A8296F161E3976E900D13EDA /* AbstractPickerTextField.m */; };
-		A878E94E1E378D220058B451 /* TextFieldWithBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A878E94D1E378D220058B451 /* TextFieldWithBlocks.m */; };
-		A878E9511E379E100058B451 /* UIView+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A878E9501E379E100058B451 /* UIView+RHB.m */; };
 		A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */; };
 		A8977DE31E3517E6008AFE71 /* RHBTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DE21E3517E6008AFE71 /* RHBTextFieldDelegate.m */; };
+		A8C69A8F1E3A0A9200B7FF51 /* UILabel+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A8C1E3A0A9200B7FF51 /* UILabel+RHB.m */; };
+		A8C69A901E3A0A9200B7FF51 /* UIView+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A8E1E3A0A9200B7FF51 /* UIView+RHB.m */; };
+		A8C69A961E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A931E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m */; };
+		A8C69A971E3A0B4E00B7FF51 /* TextFieldWithBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A951E3A0B4E00B7FF51 /* TextFieldWithBlocks.m */; };
 		AC7A2A921E33261800FE3E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A911E33261800FE3E73 /* main.m */; };
 		AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A941E33261800FE3E73 /* AppDelegate.m */; };
 		AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A971E33261800FE3E73 /* ViewController.m */; };
@@ -33,20 +33,20 @@
 		A82022281E3829180079DEDF /* MultiArrayTextField+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MultiArrayTextField+RHB.m"; sourceTree = "<group>"; };
 		A826C6B41E34E81C0080D787 /* MultiArrayPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayPickerView.h; sourceTree = "<group>"; };
 		A826C6B51E34E81C0080D787 /* MultiArrayPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiArrayPickerView.m; sourceTree = "<group>"; };
-		A8296EFC1E38F3BA00D13EDA /* UILabel+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RHB.h"; sourceTree = "<group>"; };
-		A8296EFD1E38F3BA00D13EDA /* UILabel+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RHB.m"; sourceTree = "<group>"; };
-		A8296F081E39389600D13EDA /* RHBTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBTapGestureRecognizer.h; sourceTree = "<group>"; };
-		A8296F091E39389600D13EDA /* RHBTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHBTapGestureRecognizer.m; sourceTree = "<group>"; };
 		A8296F151E3976E900D13EDA /* AbstractPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPickerTextField.h; sourceTree = "<group>"; };
 		A8296F161E3976E900D13EDA /* AbstractPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractPickerTextField.m; sourceTree = "<group>"; };
-		A878E94C1E378D220058B451 /* TextFieldWithBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldWithBlocks.h; sourceTree = "<group>"; };
-		A878E94D1E378D220058B451 /* TextFieldWithBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldWithBlocks.m; sourceTree = "<group>"; };
-		A878E94F1E379E100058B451 /* UIView+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RHB.h"; sourceTree = "<group>"; };
-		A878E9501E379E100058B451 /* UIView+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RHB.m"; sourceTree = "<group>"; };
 		A8977DDE1E3511D9008AFE71 /* MultiArrayPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayPickerDelegate.h; sourceTree = "<group>"; };
 		A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiArrayPickerDelegate.m; sourceTree = "<group>"; };
 		A8977DE11E3517E6008AFE71 /* RHBTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHBTextFieldDelegate.h; sourceTree = "<group>"; };
 		A8977DE21E3517E6008AFE71 /* RHBTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHBTextFieldDelegate.m; sourceTree = "<group>"; };
+		A8C69A8B1E3A0A9200B7FF51 /* UILabel+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+RHB.h"; path = "UICategories/UILabel+RHB.h"; sourceTree = "<group>"; };
+		A8C69A8C1E3A0A9200B7FF51 /* UILabel+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+RHB.m"; path = "UICategories/UILabel+RHB.m"; sourceTree = "<group>"; };
+		A8C69A8D1E3A0A9200B7FF51 /* UIView+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+RHB.h"; path = "UICategories/UIView+RHB.h"; sourceTree = "<group>"; };
+		A8C69A8E1E3A0A9200B7FF51 /* UIView+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHB.m"; path = "UICategories/UIView+RHB.m"; sourceTree = "<group>"; };
+		A8C69A921E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RHBTapGestureRecognizer.h; path = UISubclasses/RHBTapGestureRecognizer.h; sourceTree = "<group>"; };
+		A8C69A931E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RHBTapGestureRecognizer.m; path = UISubclasses/RHBTapGestureRecognizer.m; sourceTree = "<group>"; };
+		A8C69A941E3A0B4E00B7FF51 /* TextFieldWithBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextFieldWithBlocks.h; path = UISubclasses/TextFieldWithBlocks.h; sourceTree = "<group>"; };
+		A8C69A951E3A0B4E00B7FF51 /* TextFieldWithBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextFieldWithBlocks.m; path = UISubclasses/TextFieldWithBlocks.m; sourceTree = "<group>"; };
 		AC7A2A8D1E33261800FE3E73 /* PickerTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7A2A911E33261800FE3E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC7A2A931E33261800FE3E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +89,28 @@
 				DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A84293B81E3A0A42004C4A2D /* UICategories */ = {
+			isa = PBXGroup;
+			children = (
+				A8C69A8B1E3A0A9200B7FF51 /* UILabel+RHB.h */,
+				A8C69A8C1E3A0A9200B7FF51 /* UILabel+RHB.m */,
+				A8C69A8D1E3A0A9200B7FF51 /* UIView+RHB.h */,
+				A8C69A8E1E3A0A9200B7FF51 /* UIView+RHB.m */,
+			);
+			name = UICategories;
+			sourceTree = "<group>";
+		};
+		A8C69A911E3A0AC400B7FF51 /* UISubclasses */ = {
+			isa = PBXGroup;
+			children = (
+				A8C69A921E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.h */,
+				A8C69A931E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m */,
+				A8C69A941E3A0B4E00B7FF51 /* TextFieldWithBlocks.h */,
+				A8C69A951E3A0B4E00B7FF51 /* TextFieldWithBlocks.m */,
+			);
+			name = UISubclasses;
 			sourceTree = "<group>";
 		};
 		AC7A2A841E33261800FE3E73 = {
@@ -137,6 +159,10 @@
 		AC7A2AA71E33262F00FE3E73 /* PickerTextField */ = {
 			isa = PBXGroup;
 			children = (
+				A8C69A911E3A0AC400B7FF51 /* UISubclasses */,
+				A84293B81E3A0A42004C4A2D /* UICategories */,
+				A8296F151E3976E900D13EDA /* AbstractPickerTextField.h */,
+				A8296F161E3976E900D13EDA /* AbstractPickerTextField.m */,
 				AC7A2AAA1E33264A00FE3E73 /* MultiArrayTextField.h */,
 				AC7A2AAB1E33264A00FE3E73 /* MultiArrayTextField.m */,
 				A82022271E3829180079DEDF /* MultiArrayTextField+RHB.h */,
@@ -147,16 +173,6 @@
 				A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */,
 				A8977DE11E3517E6008AFE71 /* RHBTextFieldDelegate.h */,
 				A8977DE21E3517E6008AFE71 /* RHBTextFieldDelegate.m */,
-				A878E94C1E378D220058B451 /* TextFieldWithBlocks.h */,
-				A878E94D1E378D220058B451 /* TextFieldWithBlocks.m */,
-				A878E94F1E379E100058B451 /* UIView+RHB.h */,
-				A878E9501E379E100058B451 /* UIView+RHB.m */,
-				A8296EFC1E38F3BA00D13EDA /* UILabel+RHB.h */,
-				A8296EFD1E38F3BA00D13EDA /* UILabel+RHB.m */,
-				A8296F081E39389600D13EDA /* RHBTapGestureRecognizer.h */,
-				A8296F091E39389600D13EDA /* RHBTapGestureRecognizer.m */,
-				A8296F151E3976E900D13EDA /* AbstractPickerTextField.h */,
-				A8296F161E3976E900D13EDA /* AbstractPickerTextField.m */,
 			);
 			name = PickerTextField;
 			sourceTree = "<group>";
@@ -285,16 +301,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A82022291E3829180079DEDF /* MultiArrayTextField+RHB.m in Sources */,
+				A8C69A8F1E3A0A9200B7FF51 /* UILabel+RHB.m in Sources */,
+				A8C69A901E3A0A9200B7FF51 /* UIView+RHB.m in Sources */,
 				A8977DE31E3517E6008AFE71 /* RHBTextFieldDelegate.m in Sources */,
+				A8C69A961E3A0B4E00B7FF51 /* RHBTapGestureRecognizer.m in Sources */,
 				AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */,
 				A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */,
-				A8296F0A1E39389600D13EDA /* RHBTapGestureRecognizer.m in Sources */,
-				A878E94E1E378D220058B451 /* TextFieldWithBlocks.m in Sources */,
-				A8296EFE1E38F3BA00D13EDA /* UILabel+RHB.m in Sources */,
+				A8C69A971E3A0B4E00B7FF51 /* TextFieldWithBlocks.m in Sources */,
 				AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */,
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
 				A826C6B61E34E81C0080D787 /* MultiArrayPickerView.m in Sources */,
-				A878E9511E379E100058B451 /* UIView+RHB.m in Sources */,
 				AC7A2AAD1E33264A00FE3E73 /* MultiArrayTextField.m in Sources */,
 				A8296F171E3976E900D13EDA /* AbstractPickerTextField.m in Sources */,
 			);
