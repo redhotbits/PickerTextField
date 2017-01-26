@@ -7,7 +7,7 @@
 //
 
 #import "MultiArrayTextField.h"
-#import "RHBTextFieldPickerView.h"
+#import "PTFPickerView.h"
 #import <BlocksKit/BlocksKit.h>
 #import "MultiArrayTextField+RHB.h"
 
@@ -43,7 +43,7 @@
 
 -(UIPickerView *)makeInputPicker {
     
-    return [[RHBTextFieldPickerView alloc] initWithMultiArrayTextField:self];
+    return [[PTFPickerView alloc] initWithMultiArrayTextField:self];
 }
 
 -(void)defaultSetupForViewingWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections {
