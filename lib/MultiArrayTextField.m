@@ -9,6 +9,7 @@
 #import "MultiArrayTextField.h"
 #import "MultiArrayPickerView.h"
 #import <BlocksKit/BlocksKit.h>
+#import "MultiArrayTextField+RHB.h"
 
 
 @implementation MultiArrayTextField
@@ -48,5 +49,12 @@
     
     return multiArrayPickerView;
 }
+
+-(void)defaultSetupForViewingWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections {
+    
+    [self rhb_setupMirkoStyle];
+    [self rhb_setupForViewingWithData:data selections:selections];
+}
+
 
 @end
