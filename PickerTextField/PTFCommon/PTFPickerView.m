@@ -9,7 +9,7 @@
 #import "PTFPickerView.h"
 #import "MultiArrayPickerDelegate.h"
 #import "MultiArrayTextField.h"
-#import "RHBTextFieldDelegate.h"
+#import "PTFTextFieldDelegate.h"
 #import "UIView+RHB.h"
 
 
@@ -21,7 +21,7 @@
         
         _pickerTextField = multiArrayTextField;
         [_pickerTextField rhb_addAutomaticResignRecognizer];
-        _pickerTextField.delegate = [RHBTextFieldDelegate sharedInstance];
+        _pickerTextField.delegate = [PTFTextFieldDelegate sharedInstance];
         self.dataSource = [MultiArrayPickerDelegate sharedInstance];
         self.delegate = [MultiArrayPickerDelegate sharedInstance];
     }

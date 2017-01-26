@@ -1,16 +1,16 @@
 //
-//  RHBTextFieldDelegate.m
-//  RHBTextFieldDelegate
+//  PTFTextFieldDelegate.m
+//  PTFTextFieldDelegate
 //
 //  Created by Lazar Otasevic on 1/22/17.
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
 //
 
-#import "RHBTextFieldDelegate.h"
+#import "PTFTextFieldDelegate.h"
 #import "UIView+RHB.h"
 
 
-@implementation RHBTextFieldDelegate
+@implementation PTFTextFieldDelegate
 
 RHB_SINGLETON_IMPLEMENTATION();
 
