@@ -9,18 +9,11 @@
 #import "MultiArrayTextField+RHB.h"
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
 #import "UILabel+RHB.h"
-#import "UIView+RHB.h"
+#import "UITextField+RHB.h"
 #import <BlocksKit/BlocksKit.h>
 
 
 @implementation MultiArrayTextField(RHB)
-
--(void)rhb_addRightFlipView:(UIView *)view {
-    
-    view.frame = (CGRect){CGPointZero, self.rhb_squareHeightSize};
-    self.rightViewMode = UITextFieldViewModeAlways;
-    self.rightView = view;
-}
 
 +(ViewBlock)rhb_labelViewBlockWithTextAlignment:(NSTextAlignment)textAlignment {
     
