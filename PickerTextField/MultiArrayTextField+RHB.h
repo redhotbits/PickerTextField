@@ -14,7 +14,6 @@
 -(void)rhb_addRightFlipView:(UIView *)view;
 +(ViewBlock)rhb_labelViewBlockWithTextAlignment:(NSTextAlignment)textAlignment;
 -(void)rhb_setupMirkoStyle;
--(void)rhb_setupForViewingWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections;
 
 
 @end

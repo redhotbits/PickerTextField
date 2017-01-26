@@ -10,6 +10,10 @@
 #import "UIView+RHB.h"
 
 
+@interface AbstractPickerTextField()<AbstractPickerTextFieldPrivate>
+@end
+
+
 @implementation AbstractPickerTextField
 
 -(BOOL)resignFirstResponder {
@@ -33,6 +37,20 @@
 -(void)updateTextFromSelections {
     
     self.text = [self makeTextFromSelections];
+}
+
+#pragma mark - private, abstract
+
+-(UIPickerView*)makeInputPicker {
+
+    NSAssert(0, nil);
+    return nil;
+}
+
+-(NSString *)makeTextFromSelections {
+    
+    NSAssert(0, nil);
+    return nil;
 }
 
 @end

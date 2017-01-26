@@ -12,14 +12,19 @@
 typedef UIView*(^ViewBlock)(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView);
 
 
+@protocol AbstractPickerTextFieldPrivate <NSObject>
+
+// ova dva implementiras
+-(UIPickerView*)makeInputPicker;
+-(NSString *)makeTextFromSelections;
+
+@end
+
+
 @interface AbstractPickerTextField : TextFieldWithBlocks
 
 @property (nonatomic) ViewBlock viewBlock;
 @property (nonatomic) NSArray<NSNumber *> *selections;
 -(void)updateTextFromSelections;
-
-// ova dva implementiras
--(UIPickerView*)makeInputPicker;
--(NSString *)makeTextFromSelections;
 
 @end

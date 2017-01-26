@@ -12,6 +12,10 @@
 #import "MultiArrayTextField+RHB.h"
 
 
+@interface MultiArrayTextField()<AbstractPickerTextFieldPrivate>
+@end
+
+
 @implementation MultiArrayTextField
 
 -(void)setData:(NSArray<NSArray *> *)data {
@@ -53,8 +57,9 @@
 -(void)defaultSetupForViewingWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections {
     
     [self rhb_setupMirkoStyle];
-    [self rhb_setupForViewingWithData:data selections:selections];
+    self.selections = selections;
+    self.data = data;
+    [self updateTextFromSelections];
 }
-
 
 @end
