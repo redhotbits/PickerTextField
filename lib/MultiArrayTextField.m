@@ -18,17 +18,6 @@
 
 @implementation MultiArrayTextField
 
--(void)setData:(NSArray<NSArray *> *)data {
-    
-    _data = data;
-    if (self.selections.count != data.count) {
-        
-        self.selections = [data bk_map:^id(id obj) {
-            return @(0);
-        }];
-    }
-}
-
 -(NSString *)makeTextFromSelections {
     
     NSMutableArray<NSString *> *strings = [NSMutableArray arrayWithCapacity:self.selections.count];
@@ -49,7 +38,7 @@
 -(void)setupWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections {
     
     self.data = data;
-    self.selections = selections;
+    self.selections = selections ?: [data bk_map:^id(id obj) { return @(0); }];
     self.text = [self makeTextFromSelections];
 }
 
