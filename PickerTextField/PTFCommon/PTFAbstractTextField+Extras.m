@@ -1,23 +1,22 @@
 //
-//  MultiArrayTextField+RHB.m
+//  PTFAbstractTextField+Extras.m
 //  PickerTextField
 //
-//  Created by Lazar Otasevic on 1/25/17.
+//  Created by Lazar Otasevic on 1/26/17.
 //  Copyright © 2017 Red Hot Bits. All rights reserved.
 //
 
-#import "MultiArrayTextField+RHB.h"
-#import <RHBCastingObjC/NSObject+RHBCasting.h>
+#import "PTFAbstractTextField+Extras.h"
 #import "UILabel+RHB.h"
 #import "UITextField+RHB.h"
-#import <BlocksKit/BlocksKit.h>
+#import <RHBCastingObjC/NSObject+RHBCasting.h>
 
 
-@implementation MultiArrayTextField(RHB)
+@implementation PTFAbstractTextField(Extras)
 
-+(ViewBlock)rhb_labelViewBlockWithTextAlignment:(NSTextAlignment)textAlignment {
++(PTFPickerSubviewBlock)labelViewBlockWithTextAlignment:(NSTextAlignment)textAlignment {
     
-    return ^UIView*(UITextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView) {
+    return ^UIView*(PTFAbstractTextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView) {
         
         UILabel *retval = [UILabel rhb_verifyCast:reuseView];
         if (!retval) {
@@ -33,9 +32,9 @@
     };
 }
 
--(void)rhb_setupMirkoStyle {
+-(void)setupMirkoStyle {
     
-    self.viewBlock = [[self class] rhb_labelViewBlockWithTextAlignment:NSTextAlignmentCenter];
+    self.pickerSubviewBlock = [[self class] labelViewBlockWithTextAlignment:NSTextAlignmentCenter];
     UILabel *label = [UILabel rhb_arrowDown];
     label.font = self.font;
     [self rhb_addRightFlipView:label];

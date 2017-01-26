@@ -7,22 +7,25 @@
 //
 
 #import "RHBUITextField.h"
-#import "PTFViewBlock.h"
+
 
 
 @protocol PTFAbstractTextFieldPrivate <NSObject>
 
-// ova dva implementiras
 -(UIPickerView*)makeInputPicker;
--(NSString *)makeTextFromSelections;
 
 @end
 
 
 @interface PTFAbstractTextField : RHBUITextField
 
-@property (nonatomic) ViewBlock viewBlock;
+typedef UIView*(^PTFPickerSubviewBlock)(PTFAbstractTextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView);
+
+@property (nonatomic) PTFPickerSubviewBlock pickerSubviewBlock;
 @property (nonatomic) NSArray<NSNumber *> *selections;
--(void)updateTextFromSelections;
+-(NSString *)makeTextFromSelections;
 
 @end
+
+
+#import "PTFAbstractTextField+Extras.h"

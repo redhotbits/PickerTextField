@@ -16,10 +16,12 @@
     [super viewDidLoad];
     
 //    self.picker.data = @[@[@"test",@"test2",@"test3",@"test4",@"test5",@"test6",@"test7",@"test8",@"test9"]];
-    [self.picker defaultSetupForViewingWithData:@[@[@"test",@"test2"],@[@"test3",@"test4"]] selections:@[@1, @1]];
+    [self.picker setupMirkoStyle];
+    [self.picker setupWithData:@[@[@"test",@"test2"],@[@"test3",@"test4"]] selections:@[@1, @1]];
     self.picker.enabled = NO;
 
-    [self.picker2 defaultSetupForViewingWithData:@[@[@"1", @"2"],@[@"3", @"4"], @[@"1", @"2", @"3", @"4"]] selections:nil];
+    [self.picker2 setupMirkoStyle];
+    [self.picker2 setupWithData:@[@[@"1", @"2"],@[@"3", @"4"], @[@"1", @"2", @"3", @"4"]] selections:nil];
 }
 
 @end

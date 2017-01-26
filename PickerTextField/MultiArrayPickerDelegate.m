@@ -51,7 +51,7 @@ RHB_SINGLETON_IMPLEMENTATION();
         NSMutableArray<NSNumber *> *mutableSelections = selections.mutableCopy;
         mutableSelections[component] = @(row);
         castedField.selections = mutableSelections;
-        [castedField updateTextFromSelections];
+        castedField.text = [castedField makeTextFromSelections];
     }
 }
 
@@ -59,7 +59,7 @@ RHB_SINGLETON_IMPLEMENTATION();
     
     PTFPickerView *castedPicker = [PTFPickerView rhb_verifyCast:pickerView];
     PTFAbstractTextField *castedField = [PTFAbstractTextField rhb_verifyCast:castedPicker.pickerTextField];
-    return castedField.viewBlock(castedField, pickerView, row, component, view);
+    return castedField.pickerSubviewBlock(castedField, pickerView, row, component, view);
 }
 
 @end

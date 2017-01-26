@@ -15,11 +15,6 @@
 
 @implementation PTFAbstractTextField
 
--(void)awakeFromNib {
-    
-    
-}
-
 -(BOOL)resignFirstResponder {
     
     self.inputView = nil;
@@ -40,11 +35,6 @@
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
     
     return NO;
-}
-
--(void)updateTextFromSelections {
-    
-    self.text = [self makeTextFromSelections];
 }
 
 #pragma mark - private, abstract

@@ -14,7 +14,7 @@
 
 @property (nonatomic) NSArray<NSArray *> *data;
 
--(void)defaultSetupForViewingWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections;
+-(void)setupWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections;
 
 @end
 

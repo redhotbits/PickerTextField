@@ -9,7 +9,7 @@
 #import "MultiArrayTextField.h"
 #import "PTFPickerView.h"
 #import <BlocksKit/BlocksKit.h>
-#import "MultiArrayTextField+RHB.h"
+#import "PTFAbstractTextField.h"
 
 
 @interface MultiArrayTextField()<PTFAbstractTextFieldPrivate>
@@ -46,12 +46,11 @@
     return [[PTFPickerView alloc] initWithMultiArrayTextField:self];
 }
 
--(void)defaultSetupForViewingWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections {
+-(void)setupWithData:(NSArray<NSArray *> *)data selections:(NSArray<NSNumber *> *)selections {
     
-    [self rhb_setupMirkoStyle];
-    self.selections = selections;
     self.data = data;
-    [self updateTextFromSelections];
+    self.selections = selections;
+    self.text = [self makeTextFromSelections];
 }
 
 @end
