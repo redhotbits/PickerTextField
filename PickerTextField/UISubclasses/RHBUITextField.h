@@ -18,4 +18,5 @@ typedef void(^FlagBlock)(RHBUITextField *field, BOOL flag);
 @end
 
 
+#import "UITextField+RHB.h"
 #import "RHBUITextField+Extras.h"

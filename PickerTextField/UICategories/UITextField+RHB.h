@@ -12,5 +12,6 @@
 @interface UITextField(RHB)
 
 -(instancetype)rhb_rightView:(UIView *)view rightViewMode:(UITextFieldViewMode)rightViewMode;
+-(instancetype)rhb_textAlignment:(NSTextAlignment)textAlignment;
 
 @end
