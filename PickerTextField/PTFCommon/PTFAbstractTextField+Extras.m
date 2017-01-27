@@ -13,10 +13,6 @@
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
 
 
-@interface PTFAbstractTextField()<PTFAbstractTextFieldPrivateExtras>
-@end
-
-
 @implementation PTFAbstractTextField(Extras)
 
 -(instancetype)rhb_pickerLabelTextAlignment:(NSTextAlignment)textAlignment {
