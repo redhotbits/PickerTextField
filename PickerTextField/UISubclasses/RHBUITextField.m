@@ -13,11 +13,22 @@
 
 -(void)setEnabled:(BOOL)enabled {
     
+    NSLog(@"%@%@", [self class], @(__PRETTY_FUNCTION__));
     if (self.enableBlock) {
         
         self.enableBlock(self, enabled);
     }
     [super setEnabled:enabled];
+}
+
+-(void)setHighlighted:(BOOL)highlighted {
+    
+    NSLog(@"%@%@", [self class], @(__PRETTY_FUNCTION__));
+    if (self.highligtedBlock) {
+        
+        self.highligtedBlock(self, highlighted);
+    }
+    [super setHighlighted:highlighted];
 }
 
 @end

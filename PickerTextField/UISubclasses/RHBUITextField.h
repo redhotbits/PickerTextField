@@ -14,6 +14,7 @@
 typedef void(^FlagBlock)(RHBUITextField *field, BOOL flag);
 
 @property (nonatomic) FlagBlock enableBlock;
+@property (nonatomic) FlagBlock highligtedBlock;
 
 @end
 
