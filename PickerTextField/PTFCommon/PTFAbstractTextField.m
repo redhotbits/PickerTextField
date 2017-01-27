@@ -34,9 +34,16 @@
     return [super becomeFirstResponder];
 }
 
+#pragma mark - specific for the picker text field
+
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
     
     return NO;
+}
+
+- (CGRect)caretRectForPosition:(UITextPosition *)position {
+    
+    return CGRectZero;
 }
 
 #pragma mark - private, abstract

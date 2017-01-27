@@ -20,9 +20,4 @@
     [super setEnabled:enabled];
 }
 
-- (CGRect)caretRectForPosition:(UITextPosition *)position
-{
-    return CGRectZero;
-}
-
 @end
