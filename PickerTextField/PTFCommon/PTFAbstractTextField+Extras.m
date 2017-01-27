@@ -33,7 +33,13 @@
     
     self.highligtedBlock = ^(RHBUITextField *field, BOOL flag) {
       
-        field.layer.cornerRadius = flag ? radius : 0;
+        CGFloat cornerRadius = (CGFloat)[[[field.subviews firstObject] valueForKey:NSStringFromSelector(@selector(cornerRadius))] doubleValue];
+        
+        if (cornerRadius) {
+            
+            field.layer.cornerRadius = cornerRadius;
+        }
+        
         field.layer.borderWidth = flag ? width : 0;
     };
     return self;
