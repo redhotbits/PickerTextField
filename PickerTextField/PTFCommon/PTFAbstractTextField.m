@@ -62,7 +62,14 @@
 
 -(instancetype)rhb_defaultStyle {
     
-    CGFloat cornerRadius = (CGFloat)[[[self.subviews firstObject] valueForKey:NSStringFromSelector(@selector(cornerRadius))] doubleValue];
+    CGFloat cornerRadius = 0;
+    UIView* roundedView = [self.subviews firstObject];
+    SEL cornerRadiusSelector = @selector(cornerRadius);
+    
+    if([roundedView respondsToSelector:cornerRadiusSelector]){
+        cornerRadius = [[roundedView valueForKey:NSStringFromSelector(cornerRadiusSelector)] doubleValue];
+    }
+    
     return [[[[self rhb_arrowDown] rhb_pickerLabelTextAlignment:NSTextAlignmentCenter] rhb_enabledBlockWithTransparency:(CGFloat)0.5] rhb_highlightBorderWithRadius:cornerRadius width:1];
 }
 
