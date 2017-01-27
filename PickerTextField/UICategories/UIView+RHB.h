@@ -15,6 +15,6 @@
 
 @property (nonatomic, readonly) CGSize rhb_squareHeightSize;
 
--(void)rhb_addAutomaticResignRecognizer;
+-(UITapGestureRecognizer *)rhb_resignRecognizer;
 
 @end

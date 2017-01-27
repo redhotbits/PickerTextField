@@ -28,17 +28,15 @@
     return CGSizeMake(h, h);
 }
 
--(void)rhb_addAutomaticResignRecognizer {
+-(UITapGestureRecognizer *)rhb_resignRecognizer {
     
     RHBUITapGestureRecognizer *tap = [RHBUITapGestureRecognizer new];
-    __weak UIView *view = UIApplication.sharedApplication.keyWindow.subviews.firstObject;
     __weak typeof(self) weakSelf = self;
     tap.actionBlock = ^(RHBUITapGestureRecognizer *recognizer){
         
         [weakSelf resignFirstResponder];
-        [view removeGestureRecognizer:recognizer];
     };
-    [view addGestureRecognizer:tap];
+    return tap;
 }
 
 @end

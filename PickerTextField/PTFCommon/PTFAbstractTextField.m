@@ -17,12 +17,14 @@
 
 -(BOOL)resignFirstResponder {
     
+    NSLog(@"%@%@", [self class], @(__PRETTY_FUNCTION__));
     self.inputView = nil;
     return [super resignFirstResponder];
 }
 
 - (BOOL)becomeFirstResponder {
     
+    NSLog(@"%@%@", [self class], @(__PRETTY_FUNCTION__));
     UIPickerView *pickerView = [self makeInputPicker];
     [self.selections enumerateObjectsUsingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         

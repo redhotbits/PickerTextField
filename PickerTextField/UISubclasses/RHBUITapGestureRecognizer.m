@@ -13,6 +13,7 @@
 
 -(instancetype)init {
     
+    NSLog(@"%@%@", [self class], @(__PRETTY_FUNCTION__));
     return (self = [super initWithTarget:nil action:nil]);
 }
 
@@ -33,7 +34,7 @@
 
 -(void)dealloc {
     
-    NSLog(@"dealloc in %@", [self class]);
+    NSLog(@"%@%@", [self class], @(__PRETTY_FUNCTION__));
     [self setActionBlock:nil];
 }
 
