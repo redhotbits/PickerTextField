@@ -9,39 +9,34 @@
 #import "PTFAbstractTextField+Extras.h"
 #import "UILabel+RHB.h"
 #import "UITextField+RHB.h"
+#import "UIView+RHB.h"
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
+
+
+@interface PTFAbstractTextField()<PTFAbstractTextFieldPrivateExtras>
+@end
 
 
 @implementation PTFAbstractTextField(Extras)
 
-+(PTFPickerSubviewBlock)labelViewBlockWithTextAlignment:(NSTextAlignment)textAlignment {
-    
-    return ^UIView*(PTFAbstractTextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView) {
-        
-        UILabel *retval = [UILabel rhb_verifyCast:reuseView];
-        if (!retval) {
-            
-            retval = [UILabel new];
-        }
-        
-        retval.text = [pickerView.delegate pickerView:pickerView titleForRow:row forComponent:component];
-        retval.font = field.font;
-        retval.textAlignment = textAlignment;
-        
-        return retval;
+-(instancetype)rhb_pickerLabelTextAlignment:(NSTextAlignment)textAlignment {
+ 
+    self.decoratePickerSubviewBlock = ^(PTFAbstractTextField *field, UILabel *label, NSInteger row, NSInteger component){
+      
+        label.textAlignment = textAlignment;
     };
+    return self;
 }
 
--(void)setupMirkoStyle {
+-(instancetype)rhb_arrowDown {
     
-    self.pickerSubviewBlock = [[self class] labelViewBlockWithTextAlignment:NSTextAlignmentCenter];
-    UILabel *label = [UILabel rhb_arrowDown];
-    label.font = self.font;
-    [self rhb_addRightFlipView:label];
-    self.enableBlock = ^(RHBUITextField *field, BOOL flag){
-        
-        field.alpha = flag ? 1 : (CGFloat)0.5;
-    };
+    UILabel *label = [[[[[UILabel alloc] initWithFrame:(CGRect){CGPointZero, self.rhb_squareHeightSize}] rhb_font:self.font] rhb_textAlignment:NSTextAlignmentCenter] rhb_text:@"▼"];
+    return [self rhb_rightView:label rightViewMode:UITextFieldViewModeAlways];
+}
+
+-(instancetype)rhb_mirkoStyle {
+    
+    return [[[self rhb_arrowDown] rhb_pickerLabelTextAlignment:NSTextAlignmentCenter] rhb_enabledBlockWithTransparency:(CGFloat)0.5];
 }
 
 @end

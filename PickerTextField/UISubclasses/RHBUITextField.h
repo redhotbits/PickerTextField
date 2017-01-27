@@ -16,3 +16,6 @@ typedef void(^FlagBlock)(RHBUITextField *field, BOOL flag);
 @property (nonatomic) FlagBlock enableBlock;
 
 @end
+
+
+#import "RHBUITextField+Extras.h"

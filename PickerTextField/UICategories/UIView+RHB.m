@@ -39,4 +39,10 @@
     return tap;
 }
 
+-(instancetype)rhb_frame:(CGRect)frame {
+
+    self.frame = frame;
+    return self;
+}
+
 @end

@@ -9,9 +9,16 @@
 #import "PTFAbstractTextField.h"
 
 
+@protocol PTFAbstractTextFieldPrivateExtras <NSObject>
+
+-(PTFAbstractTextField *)rhb_pickerLabelTextAlignment:(NSTextAlignment)textAlignment;
+-(PTFAbstractTextField *)rhb_arrowDown;
+
+@end
+
+
 @interface PTFAbstractTextField(Extras)
 
-+(PTFPickerSubviewBlock)labelViewBlockWithTextAlignment:(NSTextAlignment)textAlignment;
--(void)setupMirkoStyle;
+-(instancetype)rhb_mirkoStyle;
 
 @end

@@ -12,11 +12,11 @@
 
 @implementation UITextField(RHB)
 
--(void)rhb_addRightFlipView:(UIView *)view {
+-(instancetype)rhb_rightView:(UIView *)view rightViewMode:(UITextFieldViewMode)rightViewMode {
     
-    view.frame = (CGRect){CGPointZero, self.rhb_squareHeightSize};
-    self.rightViewMode = UITextFieldViewModeAlways;
+    self.rightViewMode = rightViewMode;
     self.rightView = view;
+    return self;
 }
 
 @end

@@ -57,9 +57,20 @@ RHB_SINGLETON_IMPLEMENTATION();
 
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
     
+    UILabel *label = [UILabel rhb_verifyCast:view];
+    if (!label) {
+        
+        label = [UILabel new];
+    }
+    label.text = [pickerView.delegate pickerView:pickerView titleForRow:row forComponent:component];
     PTFPickerView *castedPicker = [PTFPickerView rhb_verifyCast:pickerView];
     PTFAbstractTextField *castedField = [PTFAbstractTextField rhb_verifyCast:castedPicker.pickerTextField];
-    return castedField.pickerSubviewBlock(castedField, pickerView, row, component, view);
+    label.font = castedField.font;
+    if (castedField.decoratePickerSubviewBlock) {
+        
+        castedField.decoratePickerSubviewBlock(castedField, label, row, component);
+    }
+    return label;
 }
 
 @end

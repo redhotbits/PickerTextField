@@ -11,12 +11,22 @@
 
 @implementation UILabel(RHB)
 
-+(instancetype)rhb_arrowDown {
+-(instancetype)rhb_text:(NSString *)text {
     
-    UILabel *arrow = [UILabel new];
-    arrow.text = @"▼";
-    arrow.textAlignment = NSTextAlignmentCenter;
-    return arrow;
+    self.text = text;
+    return self;
+}
+
+-(instancetype)rhb_font:(UIFont *)font {
+    
+    self.font = font;
+    return self;
+}
+
+-(instancetype)rhb_textAlignment:(NSTextAlignment)textAlignment {
+    
+    self.textAlignment = textAlignment;
+    return self;
 }
 
 @end

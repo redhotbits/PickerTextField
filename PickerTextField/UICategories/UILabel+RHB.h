@@ -11,6 +11,8 @@
 
 @interface UILabel(RHB)
 
-+(instancetype)rhb_arrowDown;
+-(instancetype)rhb_text:(NSString *)text;
+-(instancetype)rhb_font:(UIFont *)font;
+-(instancetype)rhb_textAlignment:(NSTextAlignment)textAlignment;
 
 @end

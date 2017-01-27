@@ -19,9 +19,9 @@
 
 @interface PTFAbstractTextField : RHBUITextField
 
-typedef UIView*(^PTFPickerSubviewBlock)(PTFAbstractTextField *field, UIPickerView *pickerView, NSInteger row, NSInteger component, UIView *reuseView);
+typedef void(^PTFDecoratePickerLabelBlock)(PTFAbstractTextField *field, UILabel *label, NSInteger row, NSInteger component);
 
-@property (nonatomic) PTFPickerSubviewBlock pickerSubviewBlock;
+@property (nonatomic) PTFDecoratePickerLabelBlock decoratePickerSubviewBlock;
 @property (nonatomic) NSArray<NSNumber *> *selections;
 -(NSString *)makeTextFromSelections;
 

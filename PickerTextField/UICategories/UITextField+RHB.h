@@ -11,6 +11,6 @@
 
 @interface UITextField(RHB)
 
--(void)rhb_addRightFlipView:(UIView *)view;
+-(instancetype)rhb_rightView:(UIView *)view rightViewMode:(UITextFieldViewMode)rightViewMode;
 
 @end

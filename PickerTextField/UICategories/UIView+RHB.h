@@ -17,4 +17,6 @@
 
 -(UITapGestureRecognizer *)rhb_resignRecognizer;
 
+-(instancetype)rhb_frame:(CGRect)frame;
+
 @end
