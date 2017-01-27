@@ -41,5 +41,4 @@
     [view addGestureRecognizer:tap];
 }
 
-
 @end

@@ -9,7 +9,6 @@
 #import "MultiArrayTextField.h"
 #import "PTFPickerView.h"
 #import <BlocksKit/BlocksKit.h>
-#import "PTFAbstractTextField.h"
 
 
 @interface MultiArrayTextField()<PTFAbstractTextFieldPrivate>
