@@ -8,7 +8,6 @@
 
 #import "PTFAbstractTextField+Extras.h"
 #import "UILabel+RHB.h"
-#import "UITextField+RHB.h"
 #import "UIView+RHB.h"
 #import <RHBCastingObjC/NSObject+RHBCasting.h>
 

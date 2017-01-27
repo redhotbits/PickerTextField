@@ -19,4 +19,10 @@
     return self;
 }
 
+-(instancetype)rhb_textAlignment:(NSTextAlignment)textAlignment {
+    
+    self.textAlignment = textAlignment;
+    return self;
+}
+
 @end
