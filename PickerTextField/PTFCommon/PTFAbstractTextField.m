@@ -61,9 +61,17 @@
 }
 
 -(instancetype)rhb_defaultStyle {
-    if((self.layer.cornerRadius) == 0 && (self.borderStyle == UITextBorderStyleRoundedRect)){
-        self.layer.cornerRadius = [[[self.subviews firstObject] valueForKey:NSStringFromSelector(@selector(cornerRadius))] doubleValue];
-    }
+    
+    self.highligtedBlock = ^(RHBUITextField *field, BOOL flag) {
+      
+        if (flag) {
+            
+            field.layer.cornerRadius = [[[field.subviews firstObject] valueForKey:NSStringFromSelector(@selector(cornerRadius))] doubleValue];
+            field.layer.borderWidth = 1;
+        } else {
+            field.layer.borderWidth =0;
+        }
+    };
     
     return [[[self rhb_arrowDown] rhb_pickerLabelTextAlignment:NSTextAlignmentCenter] rhb_enabledBlockWithTransparency:(CGFloat)0.5];
 }
