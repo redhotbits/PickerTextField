@@ -53,4 +53,9 @@
     return nil;
 }
 
+-(instancetype)rhb_defaultStyle {
+    
+    return [[[self rhb_arrowDown] rhb_pickerLabelTextAlignment:NSTextAlignmentCenter] rhb_enabledBlockWithTransparency:(CGFloat)0.5];
+}
+
 @end

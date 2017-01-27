@@ -13,6 +13,5 @@
 
 -(instancetype)rhb_pickerLabelTextAlignment:(NSTextAlignment)textAlignment;
 -(instancetype)rhb_arrowDown;
--(instancetype)rhb_mirkoStyle;
 
 @end

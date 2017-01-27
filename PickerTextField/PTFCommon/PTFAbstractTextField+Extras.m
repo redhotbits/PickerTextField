@@ -30,9 +30,4 @@
     return [self rhb_rightView:label rightViewMode:UITextFieldViewModeAlways];
 }
 
--(instancetype)rhb_mirkoStyle {
-    
-    return [[[self rhb_arrowDown] rhb_pickerLabelTextAlignment:NSTextAlignmentCenter] rhb_enabledBlockWithTransparency:(CGFloat)0.5];
-}
-
 @end

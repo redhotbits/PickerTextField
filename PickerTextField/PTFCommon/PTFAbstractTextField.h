@@ -9,7 +9,6 @@
 #import "RHBUITextField.h"
 
 
-
 @protocol PTFAbstractTextFieldPrivate <NSObject>
 
 -(UIPickerView*)makeInputPicker;
@@ -24,6 +23,7 @@ typedef void(^PTFDecoratePickerLabelBlock)(PTFAbstractTextField *field, UILabel 
 @property (nonatomic) PTFDecoratePickerLabelBlock decoratePickerSubviewBlock;
 @property (nonatomic) NSArray<NSNumber *> *selections;
 -(NSString *)makeTextFromSelections;
+-(instancetype)rhb_defaultStyle;
 
 @end
 

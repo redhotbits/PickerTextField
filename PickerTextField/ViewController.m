@@ -16,10 +16,10 @@
     [super viewDidLoad];
     
 //    self.picker.data = @[@[@"test",@"test2",@"test3",@"test4",@"test5",@"test6",@"test7",@"test8",@"test9"]];
-    [[self.picker rhb_mirkoStyle] setupWithData:@[@[@"test",@"test2"],@[@"test3",@"test4"]] selections:@[@1, @1]];
+    [[self.picker rhb_defaultStyle] setupWithData:@[@[@"test",@"test2"],@[@"test3",@"test4"]] selections:@[@1, @1]];
 
     //[self.picker2 setupMirkoStyle];
-    [[self.picker2 rhb_mirkoStyle] setupWithData:@[@[@"1", @"2"],@[@"3", @"4"], @[@"1", @"2", @"3", @"4"]] selections:nil];
+    [[self.picker2 rhb_defaultStyle] setupWithData:@[@[@"1", @"2"],@[@"3", @"4"], @[@"1", @"2", @"3", @"4"]] selections:nil];
 }
 
 @end
