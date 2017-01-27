@@ -17,11 +17,13 @@ RHB_SINGLETON_IMPLEMENTATION();
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     
     [textField.rightView rhb_animateVerticalFlipUp:NO];
+    textField.highlighted = YES;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     
     [textField.rightView rhb_animateVerticalFlipUp:YES];
+    textField.highlighted = NO;
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
