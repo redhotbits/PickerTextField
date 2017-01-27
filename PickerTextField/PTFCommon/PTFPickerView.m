@@ -32,6 +32,9 @@
         _pickerTextField.delegate = [PTFTextFieldDelegate sharedInstance];
         self.dataSource = [MultiArrayPickerDelegate sharedInstance];
         self.delegate = [MultiArrayPickerDelegate sharedInstance];
+        
+        _pickerTextField.layer.borderColor= [_pickerTextField.textColor CGColor];
+        _pickerTextField.layer.borderWidth= 1.0f;
     }
     return self;
 }
@@ -40,6 +43,8 @@
     
     NSLog(@"%@%@", [self class], @(__PRETTY_FUNCTION__));
     [_recognizer.view removeGestureRecognizer:_recognizer];
+    
+    _pickerTextField.layer.borderColor=[[UIColor clearColor] CGColor];
 }
 
 @end
