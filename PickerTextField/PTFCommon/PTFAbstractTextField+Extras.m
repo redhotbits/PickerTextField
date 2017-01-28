@@ -29,15 +29,4 @@
     return [self rhb_rightView:label rightViewMode:UITextFieldViewModeAlways];
 }
 
--(instancetype)rhb_highlightBorderWithRadius:(CGFloat)radius width:(CGFloat)width {
-    
-    self.highligtedBlock = ^(RHBUITextField *field, BOOL flag) {
-      
-        field.layer.cornerRadius = flag ? radius : 0;
-        field.layer.borderWidth = flag ? width : 0;
-    };
-    return self;
-}
-
-
 @end
