@@ -62,7 +62,7 @@
 
 -(instancetype)rhb_defaultStyle {
     
-    CGFloat cornerRadius = self.layer.cornerRadius;
+    CGFloat cornerRadius = 0;
     UIView* roundedView = [self.subviews firstObject];
     SEL cornerRadiusSelector = @selector(cornerRadius);
     
