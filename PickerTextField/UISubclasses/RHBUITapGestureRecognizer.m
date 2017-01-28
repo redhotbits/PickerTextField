@@ -19,7 +19,6 @@
 
 -(void)tapExecutor {
     
-    NSLog(@"%@%@", [self class], @(__PRETTY_FUNCTION__));
     self.actionBlock(self);
 }
 
