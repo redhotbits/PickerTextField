@@ -61,9 +61,6 @@
 }
 
 -(instancetype)rhb_defaultStyle {
-    if((self.layer.cornerRadius) == 0 && (self.borderStyle == UITextBorderStyleRoundedRect)){
-        self.layer.cornerRadius = [[[self.subviews firstObject] valueForKey:NSStringFromSelector(@selector(cornerRadius))] doubleValue];
-    }
     
     return [[[self rhb_arrowDown] rhb_pickerLabelTextAlignment:NSTextAlignmentCenter] rhb_enabledBlockWithTransparency:(CGFloat)0.5];
 }
