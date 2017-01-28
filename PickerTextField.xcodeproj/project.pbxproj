@@ -7,52 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BE1C92CAC9A729AA767AEF8 /* Pods_PickerTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */; };
-		A84B36841E3AB0DF00A5AEED /* PTFAbstractTextField+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = A84B36831E3AB0DF00A5AEED /* PTFAbstractTextField+Extras.m */; };
-		A84B36871E3ABBE700A5AEED /* PTFTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A84B36861E3ABBE700A5AEED /* PTFTextFieldDelegate.m */; };
-		A88741391E3A409B0040BD18 /* UITextField+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A88741381E3A409B0040BD18 /* UITextField+RHB.m */; };
-		A887413F1E3A60CF0040BD18 /* PTFAbstractTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A887413E1E3A60CF0040BD18 /* PTFAbstractTextField.m */; };
-		A88741421E3A61390040BD18 /* PTFPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A88741411E3A61390040BD18 /* PTFPickerView.m */; };
-		A889A0FF1E3B57EB00C41730 /* RHBUITextField+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = A889A0FE1E3B57EB00C41730 /* RHBUITextField+Extras.m */; };
-		A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */; };
-		A8C69A8F1E3A0A9200B7FF51 /* UILabel+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A8C1E3A0A9200B7FF51 /* UILabel+RHB.m */; };
-		A8C69A901E3A0A9200B7FF51 /* UIView+RHB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A8E1E3A0A9200B7FF51 /* UIView+RHB.m */; };
-		A8C69A961E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A931E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m */; };
-		A8C69A971E3A0B4E00B7FF51 /* RHBUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C69A951E3A0B4E00B7FF51 /* RHBUITextField.m */; };
 		AC7A2A921E33261800FE3E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A911E33261800FE3E73 /* main.m */; };
 		AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A941E33261800FE3E73 /* AppDelegate.m */; };
 		AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2A971E33261800FE3E73 /* ViewController.m */; };
 		AC7A2A9B1E33261800FE3E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7A2A991E33261800FE3E73 /* Main.storyboard */; };
 		AC7A2A9D1E33261800FE3E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7A2A9C1E33261800FE3E73 /* Assets.xcassets */; };
 		AC7A2AA01E33261800FE3E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7A2A9E1E33261800FE3E73 /* LaunchScreen.storyboard */; };
-		AC7A2AAD1E33264A00FE3E73 /* MultiArrayTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2AAB1E33264A00FE3E73 /* MultiArrayTextField.m */; };
+		AC7A2AAC1E33264A00FE3E73 /* GenericPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2AA91E33264A00FE3E73 /* GenericPicker.m */; };
+		AC7A2AAD1E33264A00FE3E73 /* PickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7A2AAB1E33264A00FE3E73 /* PickerTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C87EDABB993D3D082B28C17 /* Pods-PickerTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickerTextField/Pods-PickerTextField.release.xcconfig"; sourceTree = "<group>"; };
-		8B73ACFC2F4D56DAD93158D5 /* Pods-PickerTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickerTextField/Pods-PickerTextField.debug.xcconfig"; sourceTree = "<group>"; };
-		A84B36821E3AB0DF00A5AEED /* PTFAbstractTextField+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PTFAbstractTextField+Extras.h"; path = "PTFCommon/PTFAbstractTextField+Extras.h"; sourceTree = "<group>"; };
-		A84B36831E3AB0DF00A5AEED /* PTFAbstractTextField+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PTFAbstractTextField+Extras.m"; path = "PTFCommon/PTFAbstractTextField+Extras.m"; sourceTree = "<group>"; };
-		A84B36851E3ABBE700A5AEED /* PTFTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTFTextFieldDelegate.h; path = PTFCommon/PTFTextFieldDelegate.h; sourceTree = "<group>"; };
-		A84B36861E3ABBE700A5AEED /* PTFTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTFTextFieldDelegate.m; path = PTFCommon/PTFTextFieldDelegate.m; sourceTree = "<group>"; };
-		A88741371E3A409B0040BD18 /* UITextField+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+RHB.h"; path = "UICategories/UITextField+RHB.h"; sourceTree = "<group>"; };
-		A88741381E3A409B0040BD18 /* UITextField+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RHB.m"; path = "UICategories/UITextField+RHB.m"; sourceTree = "<group>"; };
-		A887413D1E3A60CF0040BD18 /* PTFAbstractTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTFAbstractTextField.h; path = PTFCommon/PTFAbstractTextField.h; sourceTree = "<group>"; };
-		A887413E1E3A60CF0040BD18 /* PTFAbstractTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTFAbstractTextField.m; path = PTFCommon/PTFAbstractTextField.m; sourceTree = "<group>"; };
-		A88741401E3A61390040BD18 /* PTFPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTFPickerView.h; path = PTFCommon/PTFPickerView.h; sourceTree = "<group>"; };
-		A88741411E3A61390040BD18 /* PTFPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTFPickerView.m; path = PTFCommon/PTFPickerView.m; sourceTree = "<group>"; };
-		A889A0FD1E3B57EB00C41730 /* RHBUITextField+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RHBUITextField+Extras.h"; path = "UISubclasses/RHBUITextField+Extras.h"; sourceTree = "<group>"; };
-		A889A0FE1E3B57EB00C41730 /* RHBUITextField+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RHBUITextField+Extras.m"; path = "UISubclasses/RHBUITextField+Extras.m"; sourceTree = "<group>"; };
-		A8977DDE1E3511D9008AFE71 /* MultiArrayPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiArrayPickerDelegate.h; sourceTree = "<group>"; };
-		A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiArrayPickerDelegate.m; sourceTree = "<group>"; };
-		A8C69A8B1E3A0A9200B7FF51 /* UILabel+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+RHB.h"; path = "UICategories/UILabel+RHB.h"; sourceTree = "<group>"; };
-		A8C69A8C1E3A0A9200B7FF51 /* UILabel+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+RHB.m"; path = "UICategories/UILabel+RHB.m"; sourceTree = "<group>"; };
-		A8C69A8D1E3A0A9200B7FF51 /* UIView+RHB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+RHB.h"; path = "UICategories/UIView+RHB.h"; sourceTree = "<group>"; };
-		A8C69A8E1E3A0A9200B7FF51 /* UIView+RHB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHB.m"; path = "UICategories/UIView+RHB.m"; sourceTree = "<group>"; };
-		A8C69A921E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RHBUITapGestureRecognizer.h; path = UISubclasses/RHBUITapGestureRecognizer.h; sourceTree = "<group>"; };
-		A8C69A931E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RHBUITapGestureRecognizer.m; path = UISubclasses/RHBUITapGestureRecognizer.m; sourceTree = "<group>"; };
-		A8C69A941E3A0B4E00B7FF51 /* RHBUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RHBUITextField.h; path = UISubclasses/RHBUITextField.h; sourceTree = "<group>"; };
-		A8C69A951E3A0B4E00B7FF51 /* RHBUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RHBUITextField.m; path = UISubclasses/RHBUITextField.m; sourceTree = "<group>"; };
 		AC7A2A8D1E33261800FE3E73 /* PickerTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7A2A911E33261800FE3E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC7A2A931E33261800FE3E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,9 +28,10 @@
 		AC7A2A9C1E33261800FE3E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC7A2A9F1E33261800FE3E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC7A2AA11E33261800FE3E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC7A2AAA1E33264A00FE3E73 /* MultiArrayTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiArrayTextField.h; path = ../lib/MultiArrayTextField.h; sourceTree = "<group>"; };
-		AC7A2AAB1E33264A00FE3E73 /* MultiArrayTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiArrayTextField.m; path = ../lib/MultiArrayTextField.m; sourceTree = "<group>"; };
-		DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PickerTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC7A2AA81E33264A00FE3E73 /* GenericPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericPicker.h; path = ../lib/GenericPicker.h; sourceTree = "<group>"; };
+		AC7A2AA91E33264A00FE3E73 /* GenericPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericPicker.m; path = ../lib/GenericPicker.m; sourceTree = "<group>"; };
+		AC7A2AAA1E33264A00FE3E73 /* PickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PickerTextField.h; path = ../lib/PickerTextField.h; sourceTree = "<group>"; };
+		AC7A2AAB1E33264A00FE3E73 /* PickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PickerTextField.m; path = ../lib/PickerTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,78 +39,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE1C92CAC9A729AA767AEF8 /* Pods_PickerTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A66B6C6B632FBFC6B9E6E05 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8B73ACFC2F4D56DAD93158D5 /* Pods-PickerTextField.debug.xcconfig */,
-				4C87EDABB993D3D082B28C17 /* Pods-PickerTextField.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9C919E56110AF6E275CB08A9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DB84F6C1D6BE6B9F141ACCA7 /* Pods_PickerTextField.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A84293B81E3A0A42004C4A2D /* UICategories */ = {
-			isa = PBXGroup;
-			children = (
-				A8C69A8B1E3A0A9200B7FF51 /* UILabel+RHB.h */,
-				A8C69A8C1E3A0A9200B7FF51 /* UILabel+RHB.m */,
-				A8C69A8D1E3A0A9200B7FF51 /* UIView+RHB.h */,
-				A8C69A8E1E3A0A9200B7FF51 /* UIView+RHB.m */,
-				A88741371E3A409B0040BD18 /* UITextField+RHB.h */,
-				A88741381E3A409B0040BD18 /* UITextField+RHB.m */,
-			);
-			name = UICategories;
-			sourceTree = "<group>";
-		};
-		A887413C1E3A60C30040BD18 /* PTFCommon */ = {
-			isa = PBXGroup;
-			children = (
-				A84B36851E3ABBE700A5AEED /* PTFTextFieldDelegate.h */,
-				A84B36861E3ABBE700A5AEED /* PTFTextFieldDelegate.m */,
-				A88741401E3A61390040BD18 /* PTFPickerView.h */,
-				A88741411E3A61390040BD18 /* PTFPickerView.m */,
-				A887413D1E3A60CF0040BD18 /* PTFAbstractTextField.h */,
-				A887413E1E3A60CF0040BD18 /* PTFAbstractTextField.m */,
-				A84B36821E3AB0DF00A5AEED /* PTFAbstractTextField+Extras.h */,
-				A84B36831E3AB0DF00A5AEED /* PTFAbstractTextField+Extras.m */,
-			);
-			name = PTFCommon;
-			sourceTree = "<group>";
-		};
-		A8C69A911E3A0AC400B7FF51 /* UISubclasses */ = {
-			isa = PBXGroup;
-			children = (
-				A8C69A921E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.h */,
-				A8C69A931E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m */,
-				A8C69A941E3A0B4E00B7FF51 /* RHBUITextField.h */,
-				A8C69A951E3A0B4E00B7FF51 /* RHBUITextField.m */,
-				A889A0FD1E3B57EB00C41730 /* RHBUITextField+Extras.h */,
-				A889A0FE1E3B57EB00C41730 /* RHBUITextField+Extras.m */,
-			);
-			name = UISubclasses;
-			sourceTree = "<group>";
-		};
 		AC7A2A841E33261800FE3E73 = {
 			isa = PBXGroup;
 			children = (
 				AC7A2A8F1E33261800FE3E73 /* PickerTextField */,
 				AC7A2A8E1E33261800FE3E73 /* Products */,
-				7A66B6C6B632FBFC6B9E6E05 /* Pods */,
-				9C919E56110AF6E275CB08A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,13 +89,10 @@
 		AC7A2AA71E33262F00FE3E73 /* PickerTextField */ = {
 			isa = PBXGroup;
 			children = (
-				A887413C1E3A60C30040BD18 /* PTFCommon */,
-				A8C69A911E3A0AC400B7FF51 /* UISubclasses */,
-				A84293B81E3A0A42004C4A2D /* UICategories */,
-				AC7A2AAA1E33264A00FE3E73 /* MultiArrayTextField.h */,
-				AC7A2AAB1E33264A00FE3E73 /* MultiArrayTextField.m */,
-				A8977DDE1E3511D9008AFE71 /* MultiArrayPickerDelegate.h */,
-				A8977DDF1E3511D9008AFE71 /* MultiArrayPickerDelegate.m */,
+				AC7A2AA81E33264A00FE3E73 /* GenericPicker.h */,
+				AC7A2AA91E33264A00FE3E73 /* GenericPicker.m */,
+				AC7A2AAA1E33264A00FE3E73 /* PickerTextField.h */,
+				AC7A2AAB1E33264A00FE3E73 /* PickerTextField.m */,
 			);
 			name = PickerTextField;
 			sourceTree = "<group>";
@@ -202,12 +104,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC7A2AA41E33261800FE3E73 /* Build configuration list for PBXNativeTarget "PickerTextField" */;
 			buildPhases = (
-				48331F85471FD06E945B2668 /* [CP] Check Pods Manifest.lock */,
 				AC7A2A891E33261800FE3E73 /* Sources */,
 				AC7A2A8A1E33261800FE3E73 /* Frameworks */,
 				AC7A2A8B1E33261800FE3E73 /* Resources */,
-				9017FE773A4D501AD9B84478 /* [CP] Embed Pods Frameworks */,
-				C702AAA6E6F14DD682863411 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,74 +164,16 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		48331F85471FD06E945B2668 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9017FE773A4D501AD9B84478 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickerTextField/Pods-PickerTextField-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C702AAA6E6F14DD682863411 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PickerTextField/Pods-PickerTextField-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		AC7A2A891E33261800FE3E73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C69A8F1E3A0A9200B7FF51 /* UILabel+RHB.m in Sources */,
-				A889A0FF1E3B57EB00C41730 /* RHBUITextField+Extras.m in Sources */,
-				A8C69A901E3A0A9200B7FF51 /* UIView+RHB.m in Sources */,
-				A84B36841E3AB0DF00A5AEED /* PTFAbstractTextField+Extras.m in Sources */,
-				A8C69A961E3A0B4E00B7FF51 /* RHBUITapGestureRecognizer.m in Sources */,
-				A887413F1E3A60CF0040BD18 /* PTFAbstractTextField.m in Sources */,
 				AC7A2A981E33261800FE3E73 /* ViewController.m in Sources */,
-				A8977DE01E3511D9008AFE71 /* MultiArrayPickerDelegate.m in Sources */,
-				A8C69A971E3A0B4E00B7FF51 /* RHBUITextField.m in Sources */,
-				A88741421E3A61390040BD18 /* PTFPickerView.m in Sources */,
-				A84B36871E3ABBE700A5AEED /* PTFTextFieldDelegate.m in Sources */,
+				AC7A2AAC1E33264A00FE3E73 /* GenericPicker.m in Sources */,
 				AC7A2A951E33261800FE3E73 /* AppDelegate.m in Sources */,
 				AC7A2A921E33261800FE3E73 /* main.m in Sources */,
-				AC7A2AAD1E33264A00FE3E73 /* MultiArrayTextField.m in Sources */,
-				A88741391E3A409B0040BD18 /* UITextField+RHB.m in Sources */,
+				AC7A2AAD1E33264A00FE3E73 /* PickerTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +289,6 @@
 		};
 		AC7A2AA51E33261800FE3E73 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B73ACFC2F4D56DAD93158D5 /* Pods-PickerTextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q28A9MLQ38;
@@ -456,13 +296,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redhotbits.PickerTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AC7A2AA61E33261800FE3E73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C87EDABB993D3D082B28C17 /* Pods-PickerTextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q28A9MLQ38;
@@ -470,7 +308,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redhotbits.PickerTextField;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -493,7 +330,6 @@
 				AC7A2AA61E33261800FE3E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

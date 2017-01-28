@@ -22,14 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NkM-Ln-YMa" customClass="MultiArrayTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NkM-Ln-YMa" customClass="PickerTextField">
                                 <rect key="frame" x="16" y="220" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpx-dg-xoB" customClass="MultiArrayTextField">
-                                <rect key="frame" x="16" y="276" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -37,17 +31,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cpx-dg-xoB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IRj-JO-KTB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cpx-dg-xoB" secondAttribute="bottom" constant="361" id="VIE-6B-wlM"/>
+                            <constraint firstItem="NkM-Ln-YMa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="PAp-6x-HzR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NkM-Ln-YMa" secondAttribute="trailing" id="dqW-Wx-a3t"/>
-                            <constraint firstItem="cpx-dg-xoB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e6f-Tn-YCO"/>
-                            <constraint firstItem="cpx-dg-xoB" firstAttribute="top" secondItem="NkM-Ln-YMa" secondAttribute="bottom" constant="26" id="gHc-PW-M2M"/>
                             <constraint firstItem="NkM-Ln-YMa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jpP-bI-rjv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="picker" destination="NkM-Ln-YMa" id="U9Y-qr-Dc6"/>
-                        <outlet property="picker2" destination="cpx-dg-xoB" id="qwj-YN-0zX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
