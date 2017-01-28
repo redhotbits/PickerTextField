@@ -62,7 +62,7 @@
 
 -(instancetype)rhb_defaultStyle {
     
-    return [[[[self rhb_arrowDown] rhb_pickerLabelTextAlignment:NSTextAlignmentCenter] rhb_enabledBlockWithTransparency:(CGFloat)0.5] rhb_highlightBorderWithWidth:1];
+    return [[[[self rhb_arrowDown] rhb_pickerLabelTextAlignment:NSTextAlignmentCenter] rhb_enabledBlockWithTransparency:(CGFloat)0.5] rhb_highlightBorderWithRadius:cornerRadius width:1];
 }
 
 @end

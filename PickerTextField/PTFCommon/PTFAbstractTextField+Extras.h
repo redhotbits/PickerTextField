@@ -13,6 +13,6 @@
 
 -(instancetype)rhb_pickerLabelTextAlignment:(NSTextAlignment)textAlignment;
 -(instancetype)rhb_arrowDown;
--(instancetype)rhb_highlightBorderWithWidth:(CGFloat)width;
+-(instancetype)rhb_highlightBorderWithRadius:(CGFloat)radius width:(CGFloat)width;
 
 @end

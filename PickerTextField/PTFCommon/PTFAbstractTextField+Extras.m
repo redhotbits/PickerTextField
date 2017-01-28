@@ -29,7 +29,7 @@
     return [self rhb_rightView:label rightViewMode:UITextFieldViewModeAlways];
 }
 
--(instancetype)rhb_highlightBorderWithWidth:(CGFloat)width {
+-(instancetype)rhb_highlightBorderWithRadius:(CGFloat)radius width:(CGFloat)width {
     
     self.highligtedBlock = ^(RHBUITextField *field, BOOL flag) {
       
@@ -41,7 +41,6 @@
         }
         
         field.layer.borderWidth = flag ? width : 0;
-        field.layer.borderColor = field.textColor.CGColor;
     };
     return self;
 }
